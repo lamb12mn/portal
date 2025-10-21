@@ -1,0 +1,22 @@
+{
+    "rainbowBrackets.squareBracketsColor": [
+        "#33ccff",
+        "#8080ff",
+        "#0073a8"
+    ],
+    "i18n-ally.localesPaths": ["src/i18n", "src/locales"],
+    "i18n-ally.keystyle": "flat",
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.enabledParsers": ["json", "js"],
+    "i18n-ally.sourceLanguage": "zh-CN",
+    "i18n-ally.displayLanguage": "zh-CN",
+    "i18n-ally.enabledFrameworks": ["vue"], // 框架
+    "i18n-ally.translate.engines": ["baidu"], // 翻译器
+    "i18n-ally.translate.baidu.appid": "20230814001779923", // 翻译器api-appid
+    "i18n-ally.translate.baidu.apiSecret": "U8APSW4GXwPOxVRAam4m", // 翻译器api-Secret
+    "vue-i18n.i18nPaths": "src\\i18n,src\\locales",
+    "i18n-mage.workspace.languagePath": "src/locales",
+    "i18n-mage.i18nFeatures.framework": "vue-i18n",
+    "i18n-mage.writeRules.indentType": "space",
+    "i18n-mage.writeRules.indentSize": 2 // 要翻译的 i18n 文件路径
+}
