@@ -1,0 +1,1414 @@
+<template>
+  <div>
+    <!-- Hero区域 -->
+    <section class="relative overflow-hidden">
+      <!-- 科技感网格背景 -->
+      <div class="absolute inset-0 circuit-bg opacity-30"></div>
+
+      <!-- 动态粒子背景 -->
+      <div class="absolute inset-0 dot-grid opacity-40"></div>
+
+      <!-- 模糊光晕效果 -->
+      <div
+        class="absolute -top-20 -left-20 w-72 h-72 bg-primary-400/30 rounded-full blur-3xl opacity-30"
+      ></div>
+      <div
+        class="absolute -bottom-20 -right-20 w-72 h-72 bg-secondary-400/30 rounded-full blur-3xl opacity-30"
+      ></div>
+
+      <div
+        class="container-custom py-16 md:py-24 flex flex-col md:flex-row items-center justify-between relative z-10"
+      >
+        <div class="md:w-[45%] lg:w-[48%] mb-12 md:mb-0">
+          <div
+            class="inline-block px-3 py-1 mb-6 rounded-full bg-primary-100/80 backdrop-blur-sm border border-primary-200 text-primary-700 text-sm font-medium"
+          >
+            <span class="flex items-center">
+              <span
+                class="inline-block w-2 h-2 rounded-full bg-primary-500 mr-2 animate-pulse"
+              ></span>
+              {{ t("home.hero.techBadge") }}
+            </span>
+          </div>
+          <h2 class="mb-6 leading-tight">
+            {{ t("home.hero.title")
+            }}<span class="relative inline-block tech-gradient">
+              <span
+                class="absolute inset-0 bg-primary-100/50 transform -skew-x-12 -z-10 rounded"
+              ></span>
+            </span>
+            <br />{{ t("home.hero.subtitle")
+            }}<span class="relative tech-gradient">
+              <span
+                class="absolute -bottom-1 left-0 w-full h-3 bg-secondary-200/50 -z-10 transform skew-x-3"
+              ></span>
+            </span>
+          </h2>
+          <p class="text-xl text-gray-600 mb-8 max-w-md">
+            {{ t("home.hero.detailedDesc") }}
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <router-link
+              to="/products"
+              class="btn btn-primary glow-effect group"
+            >
+              {{ t("home.hero.exploreBtnText") }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-1 inline-block transition-transform group-hover:translate-x-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </router-link>
+            <router-link to="/applicationField" class="btn btn-outline">{{
+              t("nav.applicationField")
+            }}</router-link>
+          </div>
+
+          <!-- 科技感特性指标 -->
+          <div class="mt-10 grid grid-cols-3 gap-4">
+            <div
+              class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
+            >
+              <div class="text-2xl font-bold text-primary-600">20+</div>
+              <div class="text-sm text-gray-500">定制经验</div>
+            </div>
+            <div
+              class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
+            >
+              <div class="text-2xl font-bold text-secondary-600">6000m²</div>
+              <div class="text-sm text-gray-500">生产基地</div>
+            </div>
+            <div
+              class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
+            >
+              <div class="text-2xl font-bold text-accent-600">80+</div>
+              <div class="text-sm text-gray-500">加工设备</div>
+            </div>
+          </div>
+
+          <!-- 技术标签 -->
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              class="text-xs py-1 px-3 bg-primary-100 text-primary-700 rounded-full"
+              >现代化</span
+            >
+            <span
+              class="text-xs py-1 px-3 bg-secondary-100 text-secondary-700 rounded-full"
+              >专业加工</span
+            >
+            <span
+              class="text-xs py-1 px-3 bg-accent-100 text-accent-700 rounded-full"
+              >技术成熟</span
+            >
+            <span
+              class="text-xs py-1 px-3 bg-gray-100 text-gray-700 rounded-full"
+              >新三板</span
+            >
+          </div>
+        </div>
+
+        <div class="md:w-[45%] lg:w-[48%] relative">
+          <!-- 主图 -->
+          <div class="relative z-20 mx-auto md:max-w-[90%] lg:max-w-full">
+            <div class="card-glass relative overflow-hidden z-10">
+              <div
+                class="relative overflow-hidden rounded-2xl aspect-[4/3] md:aspect-[16/10]"
+              >
+                <!-- 明显的边框效果 -->
+                <div
+                  class="absolute inset-0 rounded-2xl animate-pulse border-2 border-primary-500/50"
+                  style="box-shadow: 0 0 5px 2px rgba(99, 102, 241, 0.5)"
+                ></div>
+                <!-- 使用高质量开源AI技术相关图片替换 -->
+                <img
+                  src="@assets/images/home/banner01.jpg"
+                  alt="AI技术未来"
+                  class="w-full h-full object-cover relative z-10"
+                />
+
+                <!-- 半透明科技元素叠加层，确保更好的视觉对比 -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-primary-900/30 to-transparent z-10"
+                ></div>
+
+                <!-- 科技感UI元素覆盖，提高z-index确保在图片上方，优化圆角和边缘 -->
+                <div
+                  class="absolute top-4 right-4 flex items-center gap-2 z-30"
+                >
+                  <div
+                    class="h-3 w-3 rounded-full bg-accent-400 shadow-sm backdrop-blur-md animate-pulse"
+                    style="
+                      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+                    "
+                  ></div>
+                  <div
+                    class="h-3 w-3 rounded-full bg-secondary-400 shadow-sm backdrop-blur-md animate-pulse"
+                    style="
+                      animation-delay: 0.5s;
+                      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+                    "
+                  ></div>
+                  <div
+                    class="h-3 w-3 rounded-full bg-primary-400 shadow-sm backdrop-blur-md animate-pulse"
+                    style="
+                      animation-delay: 1s;
+                      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+                    "
+                  ></div>
+                </div>
+
+                <!-- 左上角指示灯和技术仪表盘 -->
+                <div class="absolute top-4 left-4 flex items-center z-30">
+                  <!-- 指示圆点 -->
+                  <div class="flex items-center space-x-1.5 mb-1">
+                    <div
+                      class="w-2.5 h-2.5 rounded-full bg-red-500 shadow-sm"
+                      style="
+                        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+                        box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.5),
+                          0 0 2px rgba(255, 0, 0, 0.5);
+                      "
+                    ></div>
+                    <div
+                      class="w-2.5 h-2.5 rounded-full bg-yellow-500 shadow-sm"
+                      style="
+                        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+                        box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.5),
+                          0 0 2px rgba(255, 255, 0, 0.5);
+                      "
+                    ></div>
+                    <div
+                      class="w-2.5 h-2.5 rounded-full bg-green-500 shadow-sm"
+                      style="
+                        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+                        box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.5),
+                          0 0 2px rgba(0, 255, 0, 0.5);
+                      "
+                    ></div>
+                  </div>
+
+                  <!-- 左上角方块装饰 -->
+                  <div
+                    class="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-white/40 shadow-sm"
+                    style="filter: blur(0.3px)"
+                  ></div>
+                </div>
+
+                <!-- 仪表盘元素 -->
+                <div
+                  class="absolute top-4 right-4 text-white text-xs backdrop-blur-md bg-white/5 rounded-lg px-2 py-1 flex items-center space-x-2 z-30 shadow-sm"
+                  style="
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
+                      inset 0 0 0.5px rgba(255, 255, 255, 0.3);
+                  "
+                >
+                  <div
+                    class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"
+                    style="filter: drop-shadow(0 0 2px rgba(0, 255, 0, 0.5))"
+                  ></div>
+                  <div>运行中</div>
+                </div>
+
+                <!-- 数字指标 -->
+                <div
+                  class="absolute bottom-4 left-4 text-white text-xs backdrop-blur-md bg-white/5 rounded-lg px-2 py-1 z-30 shadow-sm"
+                  style="
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
+                      inset 0 0 0.5px rgba(255, 255, 255, 0.3);
+                  "
+                >
+                  <div class="flex items-center space-x-3">
+                    <div>
+                      <div class="text-xs text-white/70">现代化生产基地</div>
+                      <div class="text-sm font-medium flex items-center">
+                        <span>6000</span>
+                        <span class="text-xs ml-1">m²</span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="text-xs text-white/70">数控设备</div>
+                      <div class="text-sm font-medium flex items-center">
+                        <span>80</span>
+                        <span class="text-xs ml-1">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 z-30"
+                >
+                  <div
+                    class="text-white text-sm tracking-wider typing-effect"
+                    style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)"
+                  >
+                    {{ t("home.heroImage.slogan") }}
+                  </div>
+                </div>
+
+                <!-- 网格线覆盖 -->
+                <div
+                  class="absolute inset-0 grid-pattern opacity-20 z-10"
+                  style="filter: blur(0.2px)"
+                ></div>
+
+                <!-- 科技感光效 -->
+                <div
+                  class="absolute -inset-0.5 bg-gradient-to-r from-primary-400/20 to-secondary-400/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                  style="backdrop-filter: blur(1px)"
+                ></div>
+
+                <!-- 中央科技仪表盘元素 -->
+                <div
+                  class="absolute top-1/4 left-1/4 transform -translate-y-1/2 -translate-x-1/2 z-30"
+                >
+                  <!-- 外环 -->
+                  <div
+                    class="w-24 h-24 rounded-full border border-white/30 flex items-center justify-center relative"
+                    style="
+                      background: radial-gradient(
+                        circle at center,
+                        rgba(59, 130, 246, 0.1),
+                        transparent
+                      );
+                      box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+                      backdrop-filter: blur(1px);
+                    "
+                  >
+                    <!-- 内环 -->
+                    <div
+                      class="w-16 h-16 rounded-full border border-white/40 flex items-center justify-center"
+                      style="
+                        background: radial-gradient(
+                          circle at center,
+                          rgba(59, 130, 246, 0.15),
+                          transparent 70%
+                        );
+                        box-shadow: inset 0 0 6px rgba(59, 130, 246, 0.2);
+                      "
+                    >
+                      <div
+                        class="text-white text-center text-xs font-semibold"
+                        style="text-shadow: 0 0 4px rgba(255, 255, 255, 0.5)"
+                      >
+                        新三板<br />上市公司
+                      </div>
+                    </div>
+
+                    <!-- 点缀小圆点 -->
+                    <div
+                      class="absolute top-2 right-4 w-1.5 h-1.5 rounded-full bg-blue-400"
+                      style="
+                        filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.8));
+                      "
+                    ></div>
+                    <div
+                      class="absolute bottom-3 left-3 w-1 h-1 rounded-full bg-blue-300"
+                      style="
+                        filter: drop-shadow(0 0 1px rgba(59, 130, 246, 0.6));
+                      "
+                    ></div>
+
+                    <!-- 动态旋转线 -->
+                    <div
+                      class="absolute inset-0 rounded-full"
+                      style="
+                        border: 1px dashed rgba(255, 255, 255, 0.3);
+                        animation: spin 8s linear infinite;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 装饰元素位置调整，减少与左侧内容重叠 -->
+          <div
+            class="absolute -bottom-10 right-0 w-32 h-32 bg-primary-200 rounded-full blur-3xl opacity-50"
+          ></div>
+          <div
+            class="absolute -top-10 left-0 w-24 h-24 bg-secondary-300 rounded-full blur-3xl opacity-50"
+          ></div>
+
+          <!-- 科技感浮动元素位置调整，提高z-index，优化边缘效果 -->
+          <div
+            class="absolute top-1/4 -right-4 w-16 h-16 bg-white/80 backdrop-blur-md rounded-lg shadow-lg border border-white/40 flex items-center justify-center animate-float z-30"
+            style="
+              animation-delay: 0.5s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+                inset 0 0 0.5px rgba(255, 255, 255, 0.8);
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-primary-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              style="filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05))"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="absolute top-2/3 -left-4 w-16 h-16 bg-white/80 backdrop-blur-md rounded-lg shadow-lg border border-white/40 flex items-center justify-center animate-float z-30"
+            style="
+              animation-delay: 1s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+                inset 0 0 0.5px rgba(255, 255, 255, 0.8);
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-secondary-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              style="filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05))"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </div>
+
+          <!-- 右下角数据元素，位置和z-index调整，优化边缘效果 -->
+          <div
+            class="absolute bottom-10 right-0 w-20 h-20 bg-white/80 backdrop-blur-md rounded-lg shadow-lg border border-white/40 flex flex-col items-center justify-center animate-float z-30"
+            style="
+              animation-delay: 1.5s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+                inset 0 0 0.5px rgba(255, 255, 255, 0.8);
+            "
+          >
+            <div class="text-xs text-gray-500 mb-1">现有产能</div>
+            <div class="text-lg font-bold text-primary-600">98.7</div>
+            <div
+              class="w-12 h-1 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full mt-1"
+              style="filter: blur(0.2px)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 工厂实拍 -->
+    <section class="section bg-white relative overflow-hidden">
+      <!-- 带纹理的科技感背景 -->
+      <div class="absolute inset-0 circuit-bg opacity-30"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50 opacity-90"
+      ></div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <span
+              class="h-px w-8 bg-gradient-to-r from-transparent to-secondary-300"
+            ></span>
+            <span
+              class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
+              >一目了然</span
+            >
+            <span
+              class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
+            ></span>
+          </div>
+          <h2 class="mb-4">工厂实拍</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            石墨工厂实拍，实现真实场景一目了然。
+          </p>
+        </div>
+      </div>
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <section1></section1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 特色产品区域 -->
+    <featuredProductsPage />
+
+    <!-- 产能布局 -->
+    <section class="section bg-white relative overflow-hidden">
+      <div class="absolute inset-0 circuit-bg opacity-30"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50 opacity-90"
+      ></div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <span
+              class="h-px w-8 bg-gradient-to-r from-transparent to-secondary-300"
+            ></span>
+            <span
+              class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
+              >聚焦核心</span
+            >
+            <span
+              class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
+            ></span>
+          </div>
+          <h2 class="mb-4">产能布局</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            我们实现了从材料研发、零部件加工到系统集成的全产业链覆盖
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="(project, index) in layoutList"
+            :key="index"
+            class="tech-box group bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r"
+              :class="[
+                index === 0
+                  ? 'from-primary-400 to-primary-600'
+                  : index === 1
+                  ? 'from-secondary-400 to-secondary-600'
+                  : 'from-accent-400 to-accent-600',
+              ]"
+            ></div>
+
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mr-3 text-white"
+              >
+                <img
+                  src="@assets/images/home/icon1.png"
+                  v-if="project.icon == 'icon1.png'"
+                />
+                <img
+                  src="@assets/images/home/icon2.png"
+                  v-if="project.icon == 'icon2.png'"
+                />
+                <img
+                  src="@assets/images/home/icon3.png"
+                  v-if="project.icon == 'icon3.png'"
+                />
+              </div>
+              <h3
+                class="text-lg font-bold group-hover:text-primary-600 transition-colors"
+              >
+                {{ project.name }}
+              </h3>
+            </div>
+
+            <p class="text-gray-600 mb-4">{{ project.description }}</p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                v-for="(tag, i) in project.tags"
+                :key="i"
+                class="text-xs py-1 px-2 rounded-full transition-colors"
+                :class="[
+                  index === 0
+                    ? 'bg-primary-100 text-primary-700'
+                    : index === 1
+                    ? 'bg-secondary-100 text-secondary-700'
+                    : 'bg-accent-100 text-accent-700',
+                ]"
+              >
+                {{ tag }}
+              </span>
+            </div>
+
+            <a
+              v-if="false"
+              :href="project.link"
+              target="_blank"
+              class="text-primary-500 font-medium hover:text-primary-600 transition-colors flex items-center group-hover:translate-x-1 transition-transform duration-300"
+            >
+              查看
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <router-link to="/projects" class="btn btn-outline">
+            {{ t("home.projects.viewAllProjects") }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 ml-1 inline-block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户实例 -->
+    <section class="section bg-white relative overflow-hidden">
+      <!-- 带纹理的科技感背景 -->
+      <div class="absolute inset-0 circuit-bg opacity-30"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50 opacity-90"
+      ></div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <span
+              class="h-px w-8 bg-gradient-to-r from-transparent to-secondary-300"
+            ></span>
+            <span
+              class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
+              >产品实力</span
+            >
+            <span
+              class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
+            ></span>
+          </div>
+          <h2 class="mb-4">客户实例</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            携手行业领军企业，通过定制化材料与集成解决方案，助力客户实现降本增效与技术突破，共筑极限制造新标杆。
+          </p>
+        </div>
+      </div>
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <section2></section2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 开源项目区域 -->
+    <section class="section relative" v-if="false">
+      <!-- 带纹理的科技感背景 -->
+      <div class="absolute inset-0 circuit-bg opacity-30"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50 opacity-90"
+      ></div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <span
+              class="h-px w-8 bg-gradient-to-r from-transparent to-secondary-300"
+            ></span>
+            <span
+              class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
+              >{{ t("home.projects.sectionSubtitle") }}</span
+            >
+            <span
+              class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
+            ></span>
+          </div>
+          <h2 class="mb-4">{{ t("home.projects.sectionTitle") }}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            {{ t("home.projects.description") }}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="(project, index) in openSourceProjects"
+            :key="index"
+            class="tech-box group bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <!-- 顶部装饰条 -->
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r"
+              :class="[
+                index === 0
+                  ? 'from-primary-400 to-primary-600'
+                  : index === 1
+                  ? 'from-secondary-400 to-secondary-600'
+                  : 'from-accent-400 to-accent-600',
+              ]"
+            ></div>
+
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mr-3 text-white"
+                :class="[
+                  index === 0
+                    ? 'bg-gradient-to-br from-primary-500 to-primary-700'
+                    : index === 1
+                    ? 'bg-gradient-to-br from-secondary-500 to-secondary-700'
+                    : 'bg-gradient-to-br from-accent-500 to-accent-700',
+                ]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    v-if="index === 0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                  <path
+                    v-else-if="index === 1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3z M8 12h8"
+                  />
+                  <path
+                    v-else
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-lg font-bold group-hover:text-primary-600 transition-colors"
+              >
+                {{ project.name }}
+              </h3>
+            </div>
+
+            <p class="text-gray-600 mb-4">{{ project.description }}</p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                v-for="(tag, i) in project.tags"
+                :key="i"
+                class="text-xs py-1 px-2 rounded-full transition-colors"
+                :class="[
+                  index === 0
+                    ? 'bg-primary-100 text-primary-700'
+                    : index === 1
+                    ? 'bg-secondary-100 text-secondary-700'
+                    : 'bg-accent-100 text-accent-700',
+                ]"
+              >
+                {{ tag }}
+              </span>
+            </div>
+
+            <!-- 项目统计 -->
+            <div
+              class="flex justify-between text-xs text-gray-500 mb-4 border-t border-gray-100 pt-3"
+            >
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+                {{ [124, 78, 92][index] }} {{ t("home.projects.stats.stars") }}
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                  />
+                </svg>
+                {{ [35, 22, 18][index] }} {{ t("home.projects.stats.forks") }}
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {{ t("home.projects.stats.timeUpdated")[index] }}
+              </div>
+            </div>
+
+            <a
+              :href="project.link"
+              target="_blank"
+              class="text-primary-500 font-medium hover:text-primary-600 transition-colors flex items-center group-hover:translate-x-1 transition-transform duration-300"
+            >
+              {{ t("home.projects.viewOnGithub") }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <router-link to="/projects" class="btn btn-outline">
+            {{ t("home.projects.viewAllProjects") }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 ml-1 inline-block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <!-- 媒体内容区域 -->
+    <section class="section bg-white relative overflow-hidden">
+      <!-- 背景装饰 -->
+      <div
+        class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-primary-50/50 to-transparent"
+      ></div>
+      <div
+        class="absolute -top-20 -right-20 w-64 h-64 bg-secondary-50 rounded-full opacity-70 blur-xl"
+      ></div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center justify-center mb-3">
+            <span
+              class="h-px w-8 bg-gradient-to-r from-transparent to-accent-300"
+            ></span>
+            <span
+              class="mx-3 text-sm font-semibold text-accent-600 uppercase tracking-wide"
+              >{{ t("home.media.sectionSubtitle") }}</span
+            >
+            <span
+              class="h-px w-8 bg-gradient-to-l from-transparent to-accent-300"
+            ></span>
+          </div>
+          <h2 class="mb-4">{{ t("home.media.sectionTitle") }}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            {{ t("home.media.description") }}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="card overflow-hidden group glow-effect transform transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="relative">
+              <div class="aspect-video bg-gray-100 overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1080"
+                  alt="B站视频"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+
+                <!-- 播放时长 -->
+                <div
+                  class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm"
+                >
+                  10:28
+                </div>
+              </div>
+
+              <!-- 播放按钮 -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-primary-500 bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center text-white transform transition-transform duration-300 group-hover:scale-110 shadow-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 渐变叠加 -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+
+            <div class="p-6 relative">
+              <!-- 视频指标 -->
+              <div class="flex items-center gap-4 mb-3 text-sm text-gray-500">
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 text-primary-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  22.5K {{ t("home.media.views") }}
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 text-primary-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"
+                    />
+                  </svg>
+                  1.2K {{ t("home.media.likes") }}
+                </div>
+              </div>
+
+              <h3
+                class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors"
+              >
+                {{ t("home.media.bilibiliVideo.title") }}
+              </h3>
+              <p class="text-gray-600 mb-4">
+                {{ t("home.media.bilibiliVideo.description") }}
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="text-primary-500 font-medium hover:text-primary-600 transition-colors flex items-center group-hover:translate-x-1 transition-transform duration-300"
+              >
+                {{ t("home.media.bilibiliVideo.watchBtn") }}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="card overflow-hidden group glow-purple transform transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="relative">
+              <div class="aspect-video bg-gray-100 overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1080"
+                  alt="抖音视频"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+
+                <!-- 播放时长 -->
+                <div
+                  class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm"
+                >
+                  03:45
+                </div>
+              </div>
+
+              <!-- 播放按钮 -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-secondary-500 bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center text-white transform transition-transform duration-300 group-hover:scale-110 shadow-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 渐变叠加 -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+
+            <div class="p-6 relative">
+              <!-- 视频指标 -->
+              <div class="flex items-center gap-4 mb-3 text-sm text-gray-500">
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 text-secondary-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  48.3K {{ t("home.media.views") }}
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 text-secondary-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"
+                    />
+                  </svg>
+                  3.6K {{ t("home.media.likes") }}
+                </div>
+              </div>
+
+              <h3
+                class="text-xl font-bold mb-2 group-hover:text-secondary-600 transition-colors"
+              >
+                {{ t("home.media.douyinVideo.title") }}
+              </h3>
+              <p class="text-gray-600 mb-4">
+                {{ t("home.media.douyinVideo.description") }}
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="text-secondary-500 font-medium hover:text-secondary-600 transition-colors flex items-center group-hover:translate-x-1 transition-transform duration-300"
+              >
+                {{ t("home.media.douyinVideo.watchBtn") }}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们区域 -->
+    <section class="section bg-gradient-tech relative overflow-hidden">
+      <!-- 科技感背景元素 -->
+      <div class="absolute inset-0 dot-grid opacity-10"></div>
+      <div class="absolute inset-0 circuit-bg opacity-10"></div>
+
+      <!-- 装饰光晕 -->
+      <div
+        class="absolute -bottom-32 -right-32 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute -top-32 -left-32 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+      ></div>
+
+      <div class="container-custom text-center relative z-10">
+        <div
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-white/20 backdrop-blur-sm text-white/90 text-sm font-medium"
+        >
+          <span class="flex items-center">
+            <span
+              class="inline-block w-2 h-2 rounded-full bg-white mr-2 animate-pulse"
+            ></span>
+            {{ t("home.contact.badge") }}
+          </span>
+        </div>
+
+        <h2 class="mb-6 text-white">{{ t("home.contact.title") }}</h2>
+
+        <p class="text-white text-opacity-90 text-xl mb-8 max-w-2xl mx-auto">
+          {{ t("home.contact.description") }}
+        </p>
+
+        <router-link
+          to="/about"
+          class="btn bg-white text-primary-600 hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
+        >
+          {{ t("home.contact.btnText") }}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 ml-1 inline-block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+            />
+          </svg>
+        </router-link>
+
+        <!-- 技术指标 -->
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+          >
+            <div class="text-2xl font-bold text-white mb-1">7 x 24</div>
+            <div class="text-white/80 text-sm">
+              {{ t("home.contact.stats.support") }}
+            </div>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+          >
+            <div class="text-2xl font-bold text-white mb-1">50+</div>
+            <div class="text-white/80 text-sm">授权专利</div>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+          >
+            <div class="text-2xl font-bold text-white mb-1">20年+</div>
+            <div class="text-white/80 text-sm">
+              {{ t("home.contact.stats.experience") }}
+            </div>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+          >
+            <div class="text-2xl font-bold text-white mb-1">98%</div>
+            <div class="text-white/80 text-sm">
+              {{ t("home.contact.stats.satisfaction") }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup>
+import { onMounted, computed, watch } from "vue";
+import { useI18n } from "vue-i18n";
+import section1 from "./components/section1.vue";
+import section2 from "./components/section2.vue";
+import featuredProductsPage from "./components/featuredProducts.vue";
+import product01 from "@assets/images/home/product01.png";
+import product02 from "@assets/images/home/product02.png";
+import product03 from "@assets/images/home/product03.png";
+const { t, locale } = useI18n();
+
+// 将特色产品数据改为计算属性，以响应语言变化
+const featuredProducts = computed(() => [
+  {
+    id: "watermark",
+    title: "石墨制品",
+    description:
+      "石墨制品是以高纯石墨为原料，通过精密加工制成的耐高温、导电导热性能优异的关键零部件。广泛应用于光伏、半导体、真空热处理等领域的加热器、坩埚、电极及结构件，是高温工艺设备的核心组件。",
+    image: product01,
+    category: "ai-tools",
+    tip: "核心组件",
+  },
+  {
+    id: "legal-eye",
+    title: "石墨材料",
+    description:
+      "石墨材料具有卓越的耐高温性、导电导热性能及化学稳定性，经高精度加工可制成加热器、坩埚、电极等核心部件，广泛应用于光伏、半导体、真空热处理等高端制造领域，是极端工况下的理想材料选择。",
+    image: product02,
+    category: "enterprise",
+    tip: "不可或缺",
+  },
+  {
+    id: "id-photo",
+    title: "高温真空设备用石墨",
+    image: product03,
+    description:
+      "专用于高温真空设备的石墨材料，具备高纯度、低放气、耐热冲击和良好机械强度，经精密加工后用作加热元件、支撑结构和坩埚，确保设备在极端环境下的稳定运行与工艺一致性。",
+    category: "platform",
+    tip: "高纯度",
+  },
+]);
+
+// 监听语言变化，更新页面内容
+watch(locale, () => {
+  // 更新结构化数据
+  updateStructuredData();
+});
+const layoutList = computed(() => [
+  {
+    id: "litemes",
+    name: "主营业务",
+    description:
+      "聚焦泛半导体及高温热工全产业链关键环节的先进碳石墨/碳基复合材料制造及应用领域的方案解决商、集成服务商。",
+    tags: ["应用场景广泛", "技术引领", "国产替代标杆"],
+    link: "https://github.com/freeleepm/LiteMES",
+    icon: "icon2.png",
+  },
+  {
+    id: "freesign",
+    name: "主营产品",
+    description:
+      "碳纤维保温材料、C/C复合材料，高温热场及其零件、PECVD用石墨舟及CFC板框、石墨制品等碳素材料。",
+    tags: ["多样化", "综合优势", "国产替代"],
+    link: "https://github.com/freeleepm/freesign",
+    icon: "icon1.png",
+  },
+  {
+    id: "miniContract",
+    name: "市场应用",
+    description:
+      "光伏行业、半导体行业、真空热处理、烧结行业、汽车行业、LED行业、VC散热等。",
+    tags: ["光伏行业", "半导体行业", "高温热工领域"],
+    link: "https://github.com/freeleepm/mini-contract",
+    icon: "icon3.png",
+  },
+]);
+const openSourceProjects = computed(() => [
+  {
+    id: "litemes",
+    name: "主营业务",
+    description:
+      "聚焦泛半导体及高温热工全产业链关键环节的先进碳石墨/碳基复合材料制造及应用领域的方案解决商、集成服务商。",
+    tags: ["JavaScript", "Vue"],
+    link: "https://github.com/freeleepm/LiteMES",
+    icon: "icon2.png",
+  },
+  {
+    id: "freesign",
+    name: "主营产品",
+    description: t("home.openSourceProjects.freesign.description"),
+    tags: ["Vue", "D3.js"],
+    link: "https://github.com/freeleepm/freesign",
+    icon: "icon1.png",
+  },
+  {
+    id: "miniContract",
+    name: "市场应用",
+    description: t("home.openSourceProjects.miniContract.description"),
+    tags: ["Vue"],
+    link: "https://github.com/freeleepm/mini-contract",
+    icon: "icon3.png",
+  },
+]);
+
+// 为首页添加结构化数据
+const updateStructuredData = () => {
+  // 移除现有的结构化数据
+  const existingScripts = document.querySelectorAll(
+    "script[data-structured-data]"
+  );
+  existingScripts.forEach((script) => script.remove());
+
+  // 添加网站结构化数据
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://leepm.com/",
+    name: t("common.appName"),
+    description: t("home.hero.detailedDesc"),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://leepm.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // 添加组织结构化数据
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://leepm.com",
+    name: t("common.appName"),
+    logo: "https://leepm.com/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-XXX-XXXX-XXXX",
+      contactType: "customer service",
+      availableLanguage: ["Chinese", "English"],
+    },
+    sameAs: ["https://weibo.com/xiahuaai", "https://github.com/freeleepm"],
+  };
+
+  // 注入结构化数据
+  let websiteScript = document.createElement("script");
+  websiteScript.type = "application/ld+json";
+  websiteScript.textContent = JSON.stringify(websiteSchema);
+  websiteScript.setAttribute("data-structured-data", "website");
+  document.head.appendChild(websiteScript);
+
+  let organizationScript = document.createElement("script");
+  organizationScript.type = "application/ld+json";
+  organizationScript.textContent = JSON.stringify(organizationSchema);
+  organizationScript.setAttribute("data-structured-data", "organization");
+  document.head.appendChild(organizationScript);
+};
+
+onMounted(() => {
+  updateStructuredData();
+});
+</script>
+
+<style>
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* 卡片容器样式优化 */
+.card-glass {
+  /* 增加圆角 */
+  border-radius: 1rem;
+  /* 多层阴影效果 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  /* 平滑边缘 */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* 确保内容不超出边界 */
+  overflow: hidden;
+  /* 轻微模糊效果软化边缘 */
+  backdrop-filter: blur(4px);
+}
+
+/* 为圆角添加微妙渐变效果，减轻锯齿感 */
+.card-glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+</style>
