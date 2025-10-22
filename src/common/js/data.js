@@ -1,12 +1,13 @@
 const getImgUrl = (name) => {
-  console.log('11111111111', name, import.meta.env.BASE_URL, import.meta.url, new URL(name, import.meta.url).href);
   // 本地开发环境
-  const prefix = import.meta.env.BASE_URL;
+  const prefix = import.meta.env.VITE_BASE_URL;
   const url = new URL(name, import.meta.url).href
-  return url.replace('/assets/', prefix + '/assets/')
+  const result = url.replace('/assets/', prefix + '/assets/').replace('\\', '/')
+  console.log('11111111111', import.meta, result);
+  return result
 };
 export const navItems = [
-  { i18nKey: "nav.home", path: "/", key: "home" }, // 首页
+  { i18nKey: "nav.home", path: "/", key: "home" }, // 首页0-9
   {
     i18nKey: "nav.graphiteProducts",
     path: "/graphiteProducts",
