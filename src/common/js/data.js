@@ -1,7 +1,9 @@
 const getImgUrl = (name) => {
   console.log('11111111111', name, import.meta.env.BASE_URL, import.meta.url, new URL(name, import.meta.url).href);
   // 本地开发环境
-  return new URL(name, import.meta.url).href;
+  const prefix = import.meta.env.BASE_URL;
+  const url = new URL(name, import.meta.url).href
+  return url.replace('/assets/', prefix + '/assets/')
 };
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页
