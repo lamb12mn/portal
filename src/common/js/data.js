@@ -6,9 +6,9 @@ const getImgUrl = (name) => {
   if (typeof window !== 'undefined' && window.location.origin.includes('github.io')) {
     // 确保路径以 / 开头但不以 // 开头
     const path = cleanName.startsWith('/') ? cleanName : `/${cleanName}`;
-    console.log('1111111111', new URL(name, import.meta.env.BASE_URL).href);
-    return new URL(name, import.meta.env.BASE_URL).href;
-    // `${import.meta.env.BASE_URL}${path.slice(1)}`;
+    console.log('1111111111', `${import.meta.env.BASE_URL}${path.slice(1)}`, path);
+    // return new URL(name, import.meta.env.BASE_URL).href;
+  return `${import.meta.env.BASE_URL}${path.slice(1)}`;
   }
   console.log('1111111111', new URL(name, import.meta.url + '/portal').href);
   
