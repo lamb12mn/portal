@@ -225,7 +225,7 @@ export default {
           content:
             "在SiC长晶炉关键部件上，贵公司的碳碳复合材料完全替代了进口，性能稳定，交付及时，是值得信赖的系统伙伴！",
           avatar: new URL("@/assets/co-branding/3.png", import.meta.url),
-          coBranding: [new URL("@/assets/img/3.png", import.meta.url), "@/assets/img/6.png"],
+          coBranding: [new URL("@/assets/img/3.png", import.meta.url), new URL("@/assets/img/6.png", import.meta.url)],
           incomes: 0,
           processingTime: 0,
         },
@@ -244,7 +244,7 @@ export default {
           email: "chen.procurement@equip.com",
           content:
             "从材料选型到应用优化，贵公司提供的一站式服务大大缩短了我们的研发周期，真正做到了降本增效。",
-          avatar: new URL("@/assets/co-branding/5png", import.meta.url),
+          avatar: new URL("@/assets/co-branding/5.png", import.meta.url),
           coBranding: [new URL("@/assets/img/8.png", import.meta.url), new URL("@/assets/img/4.png", import.meta.url)],
           incomes: 0,
           processingTime: 0,
