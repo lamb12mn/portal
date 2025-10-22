@@ -627,7 +627,7 @@ export const productsList = [
       "碳的同素异形体，具有高导电导热、耐高温、化学稳定等优异性能。",
     description:
       "石墨材料具有卓越的耐高温性、导电导热性能及化学稳定性，经高精度加工可制成加热器、坩埚、电极等核心部件，广泛应用于光伏、半导体、真空热处理等高端制造领域，是极端工况下的理想材料选择。",
-    imageUrl: getImgUrl("../../assets/images/home/product02.png"),
+    imageUrl: new URL("../../assets/images/home/product02.png", import.meta.url),
     category: "enterprise",
     tip: "不可或缺",
     features: [
@@ -754,8 +754,7 @@ export const productsList = [
   {
     id: "id-photo",
     title: "高温真空设备用石墨",
-    imageUrl: getImgUrl("../../assets/images/home/product03.png"),
-            description: "",
+    imageUrl: new URL("../../assets/images/home/product03.png", import.meta.url),
     shortDescription:
       "专为高温真空环境设计的高纯度石墨，耐高温、低气体释放、高稳定性。",
     description:
@@ -966,8 +965,7 @@ export const productsList = [
   {
     id: "id-photo1",
     title: "太阳能光伏",
-    imageUrl: getImgUrl("../../assets/images/home/product04.png"),
-            description: "",
+    imageUrl: new URL("../../assets/images/home/product04.png", import.meta.url),
     shortDescription: "利用光伏效应将太阳光直接转换为电能的清洁能源技术。",
     description:
       "太阳能光伏利用半导体材料将阳光直接转化为电能，通过太阳能电池板实现发电，具有清洁、可再生、无噪音、维护成本低等优点，是推动能源转型和实现碳中和目标的关键技术之一。",
