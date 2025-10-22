@@ -1,19 +1,6 @@
 const getImgUrl = (name) => {
-  // 移除可能的相对路径前缀
-  const cleanName = name.replace(/^\.\.\/\.\.\//, '');
-  
-  // 在 GitHub Pages 环境中使用 base 路径
-  if (typeof window !== 'undefined' && window.location.origin.includes('github.io')) {
-    // 确保路径以 / 开头但不以 // 开头
-    const path = cleanName.startsWith('/') ? cleanName : `/${cleanName}`;
-    console.log('1111111111', `${import.meta.env.BASE_URL}${path.slice(1)}`, path);
-    // return new URL(name, import.meta.env.BASE_URL).href;
-  return `${import.meta.env.BASE_URL}${path.slice(1)}`;
-  }
-  console.log('1111111111', new URL(name, import.meta.url + '/portal').href);
-  
   // 本地开发环境
-  return new URL(name, import.meta.url).href;
+  return new URL(name, import.meta.url + import.meta.env.BASE_URL).href;
 };
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页
