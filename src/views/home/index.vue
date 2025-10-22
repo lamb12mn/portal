@@ -447,7 +447,7 @@
       </div>
     </section>
     <!-- 特色产品区域 -->
-    <featuredProductsPage />
+    <!-- <featuredProductsPage /> -->
 
     <!-- 产能布局 -->
     <section class="section bg-white relative overflow-hidden">
@@ -1205,41 +1205,41 @@ import { useI18n } from "vue-i18n";
 import section1 from "./components/section1.vue";
 import section2 from "./components/section2.vue";
 import featuredProductsPage from "./components/featuredProducts.vue";
-import product01 from "@assets/images/home/product01.png";
-import product02 from "@assets/images/home/product02.png";
-import product03 from "@assets/images/home/product03.png";
+// import product01 from "@assets/images/home/product01.png";
+// import product02 from "@assets/images/home/product02.png";
+// import product03 from "@assets/images/home/product03.png";
 const { t, locale } = useI18n();
 
 // 将特色产品数据改为计算属性，以响应语言变化
-const featuredProducts = computed(() => [
-  {
-    id: "watermark",
-    title: "石墨制品",
-    description:
-      "石墨制品是以高纯石墨为原料，通过精密加工制成的耐高温、导电导热性能优异的关键零部件。广泛应用于光伏、半导体、真空热处理等领域的加热器、坩埚、电极及结构件，是高温工艺设备的核心组件。",
-    image: product01,
-    category: "ai-tools",
-    tip: "核心组件",
-  },
-  {
-    id: "legal-eye",
-    title: "石墨材料",
-    description:
-      "石墨材料具有卓越的耐高温性、导电导热性能及化学稳定性，经高精度加工可制成加热器、坩埚、电极等核心部件，广泛应用于光伏、半导体、真空热处理等高端制造领域，是极端工况下的理想材料选择。",
-    image: product02,
-    category: "enterprise",
-    tip: "不可或缺",
-  },
-  {
-    id: "id-photo",
-    title: "高温真空设备用石墨",
-    image: product03,
-    description:
-      "专用于高温真空设备的石墨材料，具备高纯度、低放气、耐热冲击和良好机械强度，经精密加工后用作加热元件、支撑结构和坩埚，确保设备在极端环境下的稳定运行与工艺一致性。",
-    category: "platform",
-    tip: "高纯度",
-  },
-]);
+// const featuredProducts = computed(() => [
+//   {
+//     id: "watermark",
+//     title: "石墨制品",
+//     description:
+//       "石墨制品是以高纯石墨为原料，通过精密加工制成的耐高温、导电导热性能优异的关键零部件。广泛应用于光伏、半导体、真空热处理等领域的加热器、坩埚、电极及结构件，是高温工艺设备的核心组件。",
+//     image: product01,
+//     category: "ai-tools",
+//     tip: "核心组件",
+//   },
+//   {
+//     id: "legal-eye",
+//     title: "石墨材料",
+//     description:
+//       "石墨材料具有卓越的耐高温性、导电导热性能及化学稳定性，经高精度加工可制成加热器、坩埚、电极等核心部件，广泛应用于光伏、半导体、真空热处理等高端制造领域，是极端工况下的理想材料选择。",
+//     image: product02,
+//     category: "enterprise",
+//     tip: "不可或缺",
+//   },
+//   {
+//     id: "id-photo",
+//     title: "高温真空设备用石墨",
+//     image: product03,
+//     description:
+//       "专用于高温真空设备的石墨材料，具备高纯度、低放气、耐热冲击和良好机械强度，经精密加工后用作加热元件、支撑结构和坩埚，确保设备在极端环境下的稳定运行与工艺一致性。",
+//     category: "platform",
+//     tip: "高纯度",
+//   },
+// ]);
 
 // 监听语言变化，更新页面内容
 watch(locale, () => {
