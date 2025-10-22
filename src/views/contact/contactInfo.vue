@@ -340,13 +340,13 @@ const initMap = () => {
   // 添加标记点
   const marker = new AMap.Marker({
     position: [114.058224, 22.614097],
-    title: '深圳市石金科技有限公司',
+    title: '格硕科技有限公司',
     map: map
   })
 
   // 添加信息窗口
   const infoWindow = new AMap.InfoWindow({
-    content: '<div style="padding: 8px 12px;"><h4 style="margin: 0 0 5px 0; font-weight: bold;">深圳市石金科技有限公司</h4><p style="margin: 0;">广东省深圳市龙岗区坂田街道办坂田社区</p><button id="nav-button" style="margin-top: 8px; padding: 4px 10px; background: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer;">导航到这里</button></div>',
+    content: '<div style="padding: 8px 12px;"><h4 style="margin: 0 0 5px 0; font-weight: bold;">格硕科技有限公司</h4><p style="margin: 0;">广东省深圳市龙岗区坂田街道办坂田社区</p><button id="nav-button" style="margin-top: 8px; padding: 4px 10px; background: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer;">导航到这里</button></div>',
     offset: new AMap.Pixel(0, -30)
   })
 

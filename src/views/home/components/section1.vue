@@ -46,7 +46,7 @@
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">石金从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
+                    <p class="text-gray-600 mb-4 flex-grow">格硕从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
                     </p>
                   </div> -->
                  
@@ -95,7 +95,7 @@
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">石金从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
+                    <p class="text-gray-600 mb-4 flex-grow">格硕从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
 
 </p>
                   </div> -->

@@ -112,14 +112,14 @@ export const productsList = [
             description: "用于玻璃封装和烧结工艺的石墨夹具和烧结板，具有优异的耐高温性能。",
           },
           {
-            content: "石金石墨制品",
+            content: "格硕石墨制品",
             image_url: new URL("../../assets/images/product/glass_2.jpg", import.meta.url),
-            description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
+            description: "高品质格硕石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
           {
-            content: "石金石墨制品",
+            content: "格硕石墨制品",
             image_url: new URL("../../assets/images/product/glass_3.png", import.meta.url),
-            description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
+            description: "高品质格硕石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
           {
             content: "石墨零件",
@@ -247,9 +247,9 @@ export const productsList = [
             description: "石墨零件具有良好的耐高温和化学稳定性，适用于各种工业应用。",
           },
           {
-            content: "石金石墨制品",
+            content: "格硕石墨制品",
             image_url: new URL("../../assets/images/product/glass_32.png", import.meta.url),
-            description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
+            description: "高品质格硕石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
         ],
       },
@@ -281,9 +281,9 @@ export const productsList = [
             description: "半导体行业专用石墨制品，具有高纯度和稳定性。",
           },
           {
-            content: "石金电子半导体",
+            content: "格硕电子半导体",
             image_url: new URL("../../assets/images/product/graphite_5.png", import.meta.url),
-            description: "石金电子半导体用石墨材料，适用于高端半导体制造。",
+            description: "格硕电子半导体用石墨材料，适用于高端半导体制造。",
           },
           {
             content: "石墨碳盘",
@@ -324,9 +324,9 @@ export const productsList = [
             description: "VC散热用石墨制品，具有优异的导热性能。",
           },
           {
-            content: "石金VC散热用石墨制品",
+            content: "格硕VC散热用石墨制品",
             image_url: new URL("../../assets/images/product/vc_2.jpg", import.meta.url),
-            description: "石金VC散热用石墨制品，导热性能优异。",
+            description: "格硕VC散热用石墨制品，导热性能优异。",
           },
           {
             content: "VC扩散焊接石墨治具",
@@ -498,9 +498,9 @@ export const productsList = [
             description: "工艺点用于精密工艺控制和监测。",
           },
           {
-            content: "石金工艺点",
+            content: "格硕工艺点",
             image_url: new URL("../../assets/images/product/boat_8.png", import.meta.url),
-            description: "石金工艺点，具有优异的性能表现。",
+            description: "格硕工艺点，具有优异的性能表现。",
           },
           {
             content: "石墨舟批发",
