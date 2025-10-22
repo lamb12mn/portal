@@ -1,6 +1,3 @@
-const getImgUrl = async (name) => {
-    return new URL(name, import.meta.url)
-}
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页0-9
   {
@@ -73,32 +70,32 @@ export const productsList = [
         items: [
           {
             content: "石墨转子",
-            image_url: getImgUrl("../../assets/images/product/car_1.png"),
+            image_url: new URL("../../assets/images/product/car_1.png", import.meta.url),
             description: "用于涡轮增压器、新能源汽车的真空助力器、电子真空泵，新电能汽车冷却系统、电机（涉水电机），化工行业。",
           },
           {
             content: "石墨轴承",
-            image_url: getImgUrl("../../assets/images/product/car_2.png"),
+            image_url: new URL("../../assets/images/product/car_2.png", import.meta.url),
             description: "石墨轴承具有优良的特性。",
           },
           {
             content: "石墨转子 旋片 叶片",
-            image_url: getImgUrl("../../assets/images/product/car_3.png"),
+            image_url: new URL("../../assets/images/product/car_3.png", import.meta.url),
             description: "石墨转子、旋片和叶片是涡轮增压器和真空泵中的关键部件，具有优异的耐磨性和自润滑性能。",
           },
           {
             content: "石墨制品-石墨轴承",
-            image_url: getImgUrl("../../assets/images/product/car_4.png"),
+            image_url: new URL("../../assets/images/product/car_4.png", import.meta.url),
             description: "石墨轴承具有良好的自润滑性能和耐高温特性。",
           },
           {
             content: "石墨制品-转子",
-            image_url: getImgUrl("../../assets/images/product/car_5.png"),
+            image_url: new URL("../../assets/images/product/car_5.png", import.meta.url),
             description: "石墨转子广泛应用于汽车涡轮增压器中，具有良好的动平衡性能和耐高温特性。",
           },
           {
             content: "真空助力泵石墨转子",
-            image_url: getImgUrl("../../assets/images/product/car_6.png"),
+            image_url: new URL("../../assets/images/product/car_6.png", import.meta.url),
             description: "专为汽车真空助力泵设计的石墨转子，具有高精度、低摩擦和长寿命的特点。",
           },
         ],
@@ -111,147 +108,147 @@ export const productsList = [
         items: [
           {
             content: "玻璃封装夹具/烧结板",
-            image_url: getImgUrl("../../assets/images/product/glass_1.png"),
+            image_url: new URL("../../assets/images/product/glass_1.png", import.meta.url),
             description: "用于玻璃封装和烧结工艺的石墨夹具和烧结板，具有优异的耐高温性能。",
           },
           {
             content: "石金石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_2.jpg"),
+            image_url: new URL("../../assets/images/product/glass_2.jpg", import.meta.url),
             description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
           {
             content: "石金石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_3.png"),
+            image_url: new URL("../../assets/images/product/glass_3.png", import.meta.url),
             description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
           {
             content: "石墨零件",
-            image_url: getImgUrl("../../assets/images/product/glass_4.png"),
+            image_url: new URL("../../assets/images/product/glass_4.png", import.meta.url),
             description: "石墨零件具有良好的耐高温和化学稳定性，适用于各种工业应用。",
           },
           {
             content: "石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_5.png"),
+            image_url: new URL("../../assets/images/product/glass_5.png", import.meta.url),
             description: "通用石墨制品，具有优异的导电性和耐高温性能。",
           },
           {
             content: "石墨制品防雷石墨片",
-            image_url: getImgUrl("../../assets/images/product/glass_6.png"),
+            image_url: new URL("../../assets/images/product/glass_6.png", import.meta.url),
             description: "防雷石墨片具有良好的导电性能，用于防雷保护。",
           },
           {
             content: "石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/glass_7.png"),
+            image_url: new URL("../../assets/images/product/glass_7.png", import.meta.url),
             description: "石墨夹具用于固定工件，具有良好的耐高温性能。",
           },
           {
             content: "大型石墨制品治具",
-            image_url: getImgUrl("../../assets/images/product/glass_8.png"),
+            image_url: new URL("../../assets/images/product/glass_8.png", import.meta.url),
             description: "大型石墨制品治具，适用于大规模工业生产。",
           },
           {
             content: "石墨制品玻璃封装治具用石墨",
-            image_url: getImgUrl("../../assets/images/product/glass_9.png"),
+            image_url: new URL("../../assets/images/product/glass_9.png", import.meta.url),
             description: "专为玻璃封装设计的石墨治具，具有优异的密封性能。",
           },
           {
             content: "破粉碎石墨治具",
-            image_url: getImgUrl("../../assets/images/product/glass_11.png"),
+            image_url: new URL("../../assets/images/product/glass_11.png", import.meta.url),
             description: "用于破粉碎工艺的石墨治具，具有良好的耐磨性。",
           },
           {
             content: "石墨制品破封烧结用石墨",
-            image_url: getImgUrl("../../assets/images/product/glass_12.png"),
+            image_url: new URL("../../assets/images/product/glass_12.png", import.meta.url),
             description: "专为破封烧结工艺设计的石墨制品，性能稳定。",
           },
           {
             content: "大型石墨转子",
-            image_url: getImgUrl("../../assets/images/product/glass_13.png"),
+            image_url: new URL("../../assets/images/product/glass_13.png", import.meta.url),
             description: "大型石墨转子，适用于大型工业设备。",
           },
           {
             content: "石墨制品破碳封装烧结用石墨",
-            image_url: getImgUrl("../../assets/images/product/glass_14.png"),
+            image_url: new URL("../../assets/images/product/glass_14.png", import.meta.url),
             description: "专为破碳封装烧结设计的石墨制品，耐高温性能优异。",
           },
           {
             content: "大型石墨制品治具",
-            image_url: getImgUrl("../../assets/images/product/glass_15.png"),
+            image_url: new URL("../../assets/images/product/glass_15.png", import.meta.url),
             description: "大型石墨制品治具，适用于大规模工业生产。",
           },
           {
             content: "石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/glass_16.png"),
+            image_url: new URL("../../assets/images/product/glass_16.png", import.meta.url),
             description: "石墨夹具用于固定工件，具有良好的耐高温性能。",
           },
           {
             content: "石墨制品防雷石墨片",
-            image_url: getImgUrl("../../assets/images/product/glass_17.png"),
+            image_url: new URL("../../assets/images/product/glass_17.png", import.meta.url),
             description: "防雷石墨片具有良好的导电性能，用于防雷保护。",
           },
           {
             content: "石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_18.png"),
+            image_url: new URL("../../assets/images/product/glass_18.png", import.meta.url),
             description: "通用石墨制品，具有优异的导电性和耐高温性能。",
           },
           {
             content: "石墨零件",
-            image_url: getImgUrl("../../assets/images/product/glass_19.png"),
+            image_url: new URL("../../assets/images/product/glass_19.png", import.meta.url),
             description: "石墨零件具有良好的耐高温和化学稳定性，适用于各种工业应用。",
           },
           {
             content: "破粉碎石墨治具",
-            image_url: getImgUrl("../../assets/images/product/glass_21.png"),
+            image_url: new URL("../../assets/images/product/glass_21.png", import.meta.url),
             description: "用于破粉碎工艺的石墨治具，具有良好的耐磨性。",
           },
           {
             content: "石墨制品破封烧结用石墨",
-            image_url: getImgUrl("../../assets/images/product/glass_22.png"),
+            image_url: new URL("../../assets/images/product/glass_22.png", import.meta.url),
             description: "专为破封烧结工艺设计的石墨制品，性能稳定。",
           },
           {
             content: "大型石墨转子",
-            image_url: getImgUrl("../../assets/images/product/glass_23.png"),
+            image_url: new URL("../../assets/images/product/glass_23.png", import.meta.url),
             description: "大型石墨转子，适用于大型工业设备。",
           },
           {
             content: "石墨制品破碳封装烧结用石墨",
-            image_url: getImgUrl("../../assets/images/product/glass_24.png"),
+            image_url: new URL("../../assets/images/product/glass_24.png", import.meta.url),
             description: "专为破碳封装烧结设计的石墨制品，耐高温性能优异。",
           },
           {
             content: "大型石墨制品治具",
-            image_url: getImgUrl("../../assets/images/product/glass_25.png"),
+            image_url: new URL("../../assets/images/product/glass_25.png", import.meta.url),
             description: "大型石墨制品治具，适用于大规模工业生产。",
           },
           {
             content: "石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/glass_26.png"),
+            image_url: new URL("../../assets/images/product/glass_26.png", import.meta.url),
             description: "石墨夹具用于固定工件，具有良好的耐高温性能。",
           },
           {
             content: "石墨制品防雷石墨片",
-            image_url: getImgUrl("../../assets/images/product/glass_27.png"),
+            image_url: new URL("../../assets/images/product/glass_27.png", import.meta.url),
             description: "防雷石墨片具有良好的导电性能，用于防雷保护。",
           },
           {
             content: "石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_28.png"),
+            image_url: new URL("../../assets/images/product/glass_28.png", import.meta.url),
             description: "通用石墨制品，具有优异的导电性和耐高温性能。",
           },
           {
             content: "石墨零件",
-            image_url: getImgUrl("../../assets/images/product/glass_29.png"),
+            image_url: new URL("../../assets/images/product/glass_29.png", import.meta.url),
             description: "石墨零件具有良好的耐高温和化学稳定性，适用于各种工业应用。",
           },
           {
             content: "石墨零件",
-            image_url: getImgUrl("../../assets/images/product/glass_31.png"),
+            image_url: new URL("../../assets/images/product/glass_31.png", import.meta.url),
             description: "石墨零件具有良好的耐高温和化学稳定性，适用于各种工业应用。",
           },
           {
             content: "石金石墨制品",
-            image_url: getImgUrl("../../assets/images/product/glass_32.png"),
+            image_url: new URL("../../assets/images/product/glass_32.png", import.meta.url),
             description: "高品质石金石墨制品，适用于精密电子元件的封装和烧结工艺。",
           },
         ],
@@ -265,52 +262,52 @@ export const productsList = [
         items: [
           {
             content: "石墨制品-电子半导体",
-            image_url: getImgUrl("../../assets/images/product/graphite_1.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_1.jpg", import.meta.url),
             description: "专为电子半导体行业设计的石墨制品，具有高纯度和优异性能。",
           },
           {
             content: "电子半导体",
-            image_url: getImgUrl("../../assets/images/product/graphite_2.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_2.jpg", import.meta.url),
             description: "电子半导体用石墨材料，具有优异的导电性和热稳定性。",
           },
           {
             content: "石墨制品电子半导体定制",
-            image_url: getImgUrl("../../assets/images/product/graphite_3.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_3.jpg", import.meta.url),
             description: "定制化电子半导体用石墨制品，满足特定工艺需求。",
           },
           {
             content: "石墨制品-半导体",
-            image_url: getImgUrl("../../assets/images/product/graphite_4.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_4.jpg", import.meta.url),
             description: "半导体行业专用石墨制品，具有高纯度和稳定性。",
           },
           {
             content: "石金电子半导体",
-            image_url: getImgUrl("../../assets/images/product/graphite_5.png"),
+            image_url: new URL("../../assets/images/product/graphite_5.png", import.meta.url),
             description: "石金电子半导体用石墨材料，适用于高端半导体制造。",
           },
           {
             content: "石墨碳盘",
-            image_url: getImgUrl("../../assets/images/product/graphite_6.png"),
+            image_url: new URL("../../assets/images/product/graphite_6.png", import.meta.url),
             description: "石墨碳盘具有良好的导电性和耐高温性能。",
           },
           {
             content: "半导体石墨制品",
-            image_url: getImgUrl("../../assets/images/product/graphite_7.png"),
+            image_url: new URL("../../assets/images/product/graphite_7.png", import.meta.url),
             description: "半导体行业专用石墨制品，满足高纯度工艺要求。",
           },
           {
             content: "电子产品用石墨制品",
-            image_url: getImgUrl("../../assets/images/product/graphite_8.png"),
+            image_url: new URL("../../assets/images/product/graphite_8.png", import.meta.url),
             description: "电子产品专用石墨制品，具有优异的性能表现。",
           },
           {
             content: "石墨制品电子烧结石墨治具",
-            image_url: getImgUrl("../../assets/images/product/graphite_9.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_9.jpg", import.meta.url),
             description: "专为电子烧结工艺设计的石墨治具，性能稳定可靠。",
           },
           {
             content: "石墨制品电子烧结石墨治具",
-            image_url: getImgUrl("../../assets/images/product/graphite_10.jpg"),
+            image_url: new URL("../../assets/images/product/graphite_10.jpg", import.meta.url),
             description: "专为电子烧结工艺设计的石墨治具，性能稳定可靠。",
           },
         ],
@@ -323,137 +320,137 @@ export const productsList = [
         items: [
           {
             content: "VC散热用石墨制品",
-            image_url: getImgUrl("../../assets/images/product/vc_1.png"),
+            image_url: new URL("../../assets/images/product/vc_1.png", import.meta.url),
             description: "VC散热用石墨制品，具有优异的导热性能。",
           },
           {
             content: "石金VC散热用石墨制品",
-            image_url: getImgUrl("../../assets/images/product/vc_2.jpg"),
+            image_url: new URL("../../assets/images/product/vc_2.jpg", import.meta.url),
             description: "石金VC散热用石墨制品，导热性能优异。",
           },
           {
             content: "VC扩散焊接石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_3.png"),
+            image_url: new URL("../../assets/images/product/vc_3.png", import.meta.url),
             description: "用于VC扩散焊接工艺的石墨治具，性能稳定。",
           },
           {
             content: "热管石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/vc_4.png"),
+            image_url: new URL("../../assets/images/product/vc_4.png", import.meta.url),
             description: "热管石墨夹具，具有良好的导热性能。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_5.png"),
+            image_url: new URL("../../assets/images/product/vc_5.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "大型石墨制品模具",
-            image_url: getImgUrl("../../assets/images/product/vc_6.png"),
+            image_url: new URL("../../assets/images/product/vc_6.png", import.meta.url),
             description: "大型石墨制品模具，适用于大规模生产。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_7.png"),
+            image_url: new URL("../../assets/images/product/vc_7.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "石墨制品超薄VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_8.png"),
+            image_url: new URL("../../assets/images/product/vc_8.png", import.meta.url),
             description: "超薄VC散热石墨治具，适用于精密设备散热。",
           },
           {
             content: "扩散焊接超薄VC均温板石墨治具生产厂",
-            image_url: getImgUrl("../../assets/images/product/vc_9.png"),
+            image_url: new URL("../../assets/images/product/vc_9.png", import.meta.url),
             description: "专为扩散焊接超薄VC均温板生产的石墨治具。",
           },
           {
             content: "石墨制品焊结中板",
-            image_url: getImgUrl("../../assets/images/product/vc_11.png"),
+            image_url: new URL("../../assets/images/product/vc_11.png", import.meta.url),
             description: "石墨制品焊结中板，具有良好的导热性能。",
           },
           {
             content: "石墨制品超薄VC石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_12.png"),
+            image_url: new URL("../../assets/images/product/vc_12.png", import.meta.url),
             description: "超薄VC石墨治具，适用于精密散热应用。",
           },
           {
             content: "小型石墨制品",
-            image_url: getImgUrl("../../assets/images/product/vc_13.png"),
+            image_url: new URL("../../assets/images/product/vc_13.png", import.meta.url),
             description: "小型石墨制品，适用于精密设备应用。",
           },
           {
             content: "扩散焊接超薄VC均温板石墨治具生产厂",
-            image_url: getImgUrl("../../assets/images/product/vc_14.png"),
+            image_url: new URL("../../assets/images/product/vc_14.png", import.meta.url),
             description: "专为扩散焊接超薄VC均温板生产的石墨治具。",
           },
           {
             content: "石墨制品超薄VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_15.png"),
+            image_url: new URL("../../assets/images/product/vc_15.png", import.meta.url),
             description: "超薄VC散热石墨治具，适用于精密设备散热。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_16.png"),
+            image_url: new URL("../../assets/images/product/vc_16.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "大型石墨制品模具",
-            image_url: getImgUrl("../../assets/images/product/vc_17.png"),
+            image_url: new URL("../../assets/images/product/vc_17.png", import.meta.url),
             description: "大型石墨制品模具，适用于大规模生产。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_18.png"),
+            image_url: new URL("../../assets/images/product/vc_18.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "热管石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/vc_19.png"),
+            image_url: new URL("../../assets/images/product/vc_19.png", import.meta.url),
             description: "热管石墨夹具，具有良好的导热性能。",
           },
           {
             content: "石墨制品超薄VC石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_21.png"),
+            image_url: new URL("../../assets/images/product/vc_21.png", import.meta.url),
             description: "超薄VC石墨治具，适用于精密散热应用。",
           },
           {
             content: "小型石墨制品",
-            image_url: getImgUrl("../../assets/images/product/vc_22.png"),
+            image_url: new URL("../../assets/images/product/vc_22.png", import.meta.url),
             description: "小型石墨制品，适用于精密设备应用。",
           },
           {
             content: "扩散焊接超薄VC均温板石墨治具生产厂",
-            image_url: getImgUrl("../../assets/images/product/vc_23.png"),
+            image_url: new URL("../../assets/images/product/vc_23.png", import.meta.url),
             description: "专为扩散焊接超薄VC均温板生产的石墨治具。",
           },
           {
             content: "石墨制品超薄VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_24.png"),
+            image_url: new URL("../../assets/images/product/vc_24.png", import.meta.url),
             description: "超薄VC散热石墨治具，适用于精密设备散热。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_25.png"),
+            image_url: new URL("../../assets/images/product/vc_25.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "大型石墨制品模具",
-            image_url: getImgUrl("../../assets/images/product/vc_26.png"),
+            image_url: new URL("../../assets/images/product/vc_26.png", import.meta.url),
             description: "大型石墨制品模具，适用于大规模生产。",
           },
           {
             content: "石墨制品VC散热石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_27.png"),
+            image_url: new URL("../../assets/images/product/vc_27.png", import.meta.url),
             description: "专为VC散热设计的石墨治具，散热效果优异。",
           },
           {
             content: "热管石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/vc_28.png"),
+            image_url: new URL("../../assets/images/product/vc_28.png", import.meta.url),
             description: "热管石墨夹具，具有良好的导热性能。",
           },
           {
             content: "VC扩散焊接石墨治具",
-            image_url: getImgUrl("../../assets/images/product/vc_29.png"),
+            image_url: new URL("../../assets/images/product/vc_29.png", import.meta.url),
             description: "VC扩散焊接石墨治具，性能稳定可靠。",
           },
         ],
@@ -467,72 +464,72 @@ export const productsList = [
         items: [
           {
             content: "石墨舟",
-            image_url: getImgUrl("../../assets/images/product/boat_1.jpg"),
+            image_url: new URL("../../assets/images/product/boat_1.jpg", import.meta.url),
             description: "石墨舟用于高温炉内传输，具有良好的耐高温性能。",
           },
           {
             content: "碳碳板框",
-            image_url: getImgUrl("../../assets/images/product/boat_2.png"),
+            image_url: new URL("../../assets/images/product/boat_2.png", import.meta.url),
             description: "碳碳板框具有良好的强度和耐高温性能。",
           },
           {
             content: "石墨制品-工艺点",
-            image_url: getImgUrl("../../assets/images/product/boat_3.jpg"),
+            image_url: new URL("../../assets/images/product/boat_3.jpg", import.meta.url),
             description: "石墨制品工艺点，用于精密工艺控制。",
           },
           {
             content: "石墨舟配件",
-            image_url: getImgUrl("../../assets/images/product/boat_4.jpg"),
+            image_url: new URL("../../assets/images/product/boat_4.jpg", import.meta.url),
             description: "石墨舟配件，用于石墨舟组装和维护。",
           },
           {
             content: "石墨制品-石墨舟配件",
-            image_url: getImgUrl("../../assets/images/product/boat_5.png"),
+            image_url: new URL("../../assets/images/product/boat_5.png", import.meta.url),
             description: "石墨制品石墨舟配件，性能稳定可靠。",
           },
           {
             content: "石墨制品-石墨舟配件",
-            image_url: getImgUrl("../../assets/images/product/boat_6.jpg"),
+            image_url: new URL("../../assets/images/product/boat_6.jpg", import.meta.url),
             description: "石墨制品石墨舟配件，性能稳定可靠。",
           },
           {
             content: "工艺点",
-            image_url: getImgUrl("../../assets/images/product/boat_7.png"),
+            image_url: new URL("../../assets/images/product/boat_7.png", import.meta.url),
             description: "工艺点用于精密工艺控制和监测。",
           },
           {
             content: "石金工艺点",
-            image_url: getImgUrl("../../assets/images/product/boat_8.png"),
+            image_url: new URL("../../assets/images/product/boat_8.png", import.meta.url),
             description: "石金工艺点，具有优异的性能表现。",
           },
           {
             content: "石墨舟批发",
-            image_url: getImgUrl("../../assets/images/product/boat_9.jpg"),
+            image_url: new URL("../../assets/images/product/boat_9.jpg", import.meta.url),
             description: "石墨舟批发产品，适用于大规模工业应用。",
           },
           {
             content: "石墨杆",
-            image_url: getImgUrl("../../assets/images/product/boat_11.jpg"),
+            image_url: new URL("../../assets/images/product/boat_11.jpg", import.meta.url),
             description: "石墨杆具有良好的导电性和耐高温性能。",
           },
           {
             content: "石墨制品-石墨舟用抛光石墨杆",
-            image_url: getImgUrl("../../assets/images/product/boat_12.jpg"),
+            image_url: new URL("../../assets/images/product/boat_12.jpg", import.meta.url),
             description: "专为石墨舟设计的抛光石墨杆，表面光洁度高。",
           },
           {
             content: "大型210硅片石墨舟",
-            image_url: getImgUrl("../../assets/images/product/boat_13.jpg"),
+            image_url: new URL("../../assets/images/product/boat_13.jpg", import.meta.url),
             description: "专为210硅片设计的大型石墨舟，容量大。",
           },
           {
             content: "27片210石墨舟",
-            image_url: getImgUrl("../../assets/images/product/boat_14.jpg"),
+            image_url: new URL("../../assets/images/product/boat_14.jpg", import.meta.url),
             description: "可装载27片210硅片的石墨舟，效率高。",
           },
           {
             content: "石墨制品-石墨舟用石墨螺杆",
-            image_url: getImgUrl("../../assets/images/product/boat_15.jpg"),
+            image_url: new URL("../../assets/images/product/boat_15.jpg", import.meta.url),
             description: "专为石墨舟设计的石墨螺杆，连接可靠。",
           },
         ],
@@ -546,22 +543,22 @@ export const productsList = [
         items: [
           {
             content: "石墨盒",
-            image_url: getImgUrl("../../assets/images/product/part_1.png"),
+            image_url: new URL("../../assets/images/product/part_1.png", import.meta.url),
             description: "石墨盒具有良好的耐高温和化学稳定性。",
           },
           {
             content: "石墨夹具",
-            image_url: getImgUrl("../../assets/images/product/part_2.png"),
+            image_url: new URL("../../assets/images/product/part_2.png", import.meta.url),
             description: "石墨夹具用于固定工件，具有良好的耐高温性能。",
           },
           {
             content: "石墨模具",
-            image_url: getImgUrl("../../assets/images/product/part_3.png"),
+            image_url: new URL("../../assets/images/product/part_3.png", import.meta.url),
             description: "用于玻璃封装和烧结工艺的石墨夹具和烧结板，具有优异的耐高温性能。",
           },
           {
             content: "石墨板",
-            image_url: getImgUrl("../../assets/images/product/part_4.png"),
+            image_url: new URL("../../assets/images/product/part_4.png", import.meta.url),
             description: "适用于高温高压工况下的化工、机械等领域。",
           },
         ],
@@ -664,22 +661,22 @@ export const productsList = [
         items: [
           {
             content: "进口石墨",
-            image_url: getImgUrl("../../assets/images/product/imported_1.png"),
+            image_url: new URL("../../assets/images/product/imported_1.png", import.meta.url),
             description: "高品质进口石墨材料，纯度高，性能稳定可靠。",
           },
           {
             content: "3D热弯手机玻璃模具石墨材料",
-            image_url: getImgUrl("../../assets/images/product/imported_2.jpg"),
+            image_url: new URL("../../assets/images/product/imported_2.jpg", import.meta.url),
             description: "专用于3D热弯手机玻璃模具制造的高性能石墨材料。",
           },
           {
             content: "高纯石墨材料",
-            image_url: getImgUrl("../../assets/images/product/imported_3.png"),
+            image_url: new URL("../../assets/images/product/imported_3.png", import.meta.url),
             description: "超高纯度石墨材料，杂质含量极低。",
           },
           {
             content: "进口等静压石墨材料",
-            image_url: getImgUrl("../../assets/images/product/imported_4.jpg"),
+            image_url: new URL("../../assets/images/product/imported_4.jpg", import.meta.url),
             description: "采用等静压工艺制造的进口石墨，密度均匀。",
           },
         ],
@@ -692,7 +689,7 @@ export const productsList = [
         items: [
           {
             content: "国产石墨",
-            image_url: getImgUrl("../../assets/images/product/domestic_1.png"),
+            image_url: new URL("../../assets/images/product/domestic_1.png", import.meta.url),
             description: "优质国产石墨产品，性价比高。",
           },
         ],
@@ -797,7 +794,7 @@ export const productsList = [
         items: [
           {
             content: "铸锭炉热场石墨件",
-            image_url: getImgUrl("../../assets/images/product/furnace_1.png"),
+            image_url: new URL("../../assets/images/product/furnace_1.png", import.meta.url),
             description: "",
           },
         ],
@@ -811,17 +808,17 @@ export const productsList = [
         items: [
           {
             content: "高温炉石墨配件",
-            image_url: getImgUrl("../../assets/images/product/vacuum_1.png"),
+            image_url: new URL("../../assets/images/product/vacuum_1.png", import.meta.url),
             description: "",
           },
           {
             content: "石墨烤架",
-            image_url: getImgUrl("../../assets/images/product/vacuum_2.png"),
+            image_url: new URL("../../assets/images/product/vacuum_2.png", import.meta.url),
             description: "",
           },
           {
             content: "真空炉石墨连接件",
-            image_url: getImgUrl("../../assets/images/product/vacuum_3.jpg"),
+            image_url: new URL("../../assets/images/product/vacuum_3.jpg", import.meta.url),
             description: "",
           },
         ],
@@ -834,17 +831,17 @@ export const productsList = [
         items: [
           {
             content: "石墨盘",
-            image_url: getImgUrl("../../assets/images/product/mim_1.png"),
+            image_url: new URL("../../assets/images/product/mim_1.png", import.meta.url),
             description: "",
           },
           {
             content: "高温设备石墨治具",
-            image_url: getImgUrl("../../assets/images/product/mim_2.png"),
+            image_url: new URL("../../assets/images/product/mim_2.png", import.meta.url),
             description: "",
           },
           {
             content: "石墨托架",
-            image_url: getImgUrl("../../assets/images/product/mim_3.png"),
+            image_url: new URL("../../assets/images/product/mim_3.png", import.meta.url),
             description: "",
           },
         ],
@@ -857,7 +854,7 @@ export const productsList = [
         items: [
           {
             content: "石墨加热器",
-            image_url: getImgUrl("../../assets/images/product/heater_1.png"),
+            image_url: new URL("../../assets/images/product/heater_1.png", import.meta.url),
             description: "",
           },
         ],
@@ -870,15 +867,15 @@ export const productsList = [
         items: [
           {
             content: "贴布石墨保温毡",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/insulation_1.png"
-            ),
+            , import.meta.url),
           },
           {
             content: "石墨碳硬毡",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/insulation_2.png"
-            ),
+            , import.meta.url),
           },
         ],
       },
@@ -890,7 +887,7 @@ export const productsList = [
         items: [
           {
             content: "石墨软毡",
-            image_url: getImgUrl("../../assets/images/product/softFelt_1.jpg"),
+            image_url: new URL("../../assets/images/product/softFelt_1.jpg", import.meta.url),
             description: "",
           },
         ],
@@ -903,7 +900,7 @@ export const productsList = [
         items: [
           {
             content: "石墨连接板",
-            image_url: getImgUrl("../../assets/images/product/shim_1.png"),
+            image_url: new URL("../../assets/images/product/shim_1.png", import.meta.url),
             description: "",
           },
         ],
@@ -1007,17 +1004,17 @@ export const productsList = [
         items: [
           {
             content: "石墨保温毡",
-            image_url: getImgUrl("../../assets/images/product/warmFelt_1.jpg"),
+            image_url: new URL("../../assets/images/product/warmFelt_1.jpg", import.meta.url),
             description: "",
           },
           {
             content: "太阳能光伏石墨毡",
-            image_url: getImgUrl("../../assets/images/product/warmFelt_2.jpg"),
+            image_url: new URL("../../assets/images/product/warmFelt_2.jpg", import.meta.url),
             description: "",
           },
           {
             content: "石墨碳毡",
-            image_url: getImgUrl("../../assets/images/product/warmFelt_3.png"),
+            image_url: new URL("../../assets/images/product/warmFelt_3.png", import.meta.url),
             description: "",
           },
         ],
@@ -1030,7 +1027,7 @@ export const productsList = [
         items: [
           {
             content: "热场配件",
-            image_url: getImgUrl("../../assets/images/product/heatPark_1.png"),
+            image_url: new URL("../../assets/images/product/heatPark_1.png", import.meta.url),
             description: "",
           },
         ],
@@ -1043,33 +1040,33 @@ export const productsList = [
         items: [
           {
             content: "碳碳石墨制品",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/carbonComposite_1.png"
-            ),
+            , import.meta.url),
           },
           {
             content: "碳碳螺杆螺母",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/carbonComposite_2.jpg"
-            ),
+            , import.meta.url),
           },
           {
             content: "碳碳垫片",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/carbonComposite_3.png"
-            ),
+            , import.meta.url),
           },
           {
             content: "碳碳复合材料连接板",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/carbonComposite_4.png"
-            ),
+            , import.meta.url),
           },
           {
             content: "碳碳紧固件",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/carbonComposite_5.png"
-            ),
+            , import.meta.url),
           },
         ],
       },
@@ -1081,9 +1078,9 @@ export const productsList = [
         items: [
           {
             content: "隔热笼,隔热材料",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/insulationCage_1.png"
-            ),
+            , import.meta.url),
           },
         ],
       },
@@ -1095,15 +1092,15 @@ export const productsList = [
         items: [
           {
             content: "CFC螺栓螺母",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/accessories_1.png"
-            ),
+            , import.meta.url),
           },
           {
             content: "热场配件",
-            image_url: getImgUrl(
+            image_url: new URL(
               "../../assets/images/product/accessories_2.png"
-            ),
+            , import.meta.url),
           },
         ],
       },
@@ -1166,32 +1163,32 @@ export const productsList = [
 export const automotiveField = [
   {
     content: "石墨转子",
-    image_url: getImgUrl("../../assets/images/product/car_1.png"),
-      description: "",
+    image_url: new URL("../../assets/images/product/car_1.png", import.meta.url),
+    description: "用于涡轮增压器、新能源汽车的真空助力器、电子真空泵，新电能汽车冷却系统、电机（涉水电机），化工行业。",
   },
   {
     content: "石墨轴承",
-    image_url: getImgUrl("../../assets/images/product/car_2.png"),
-            description: "",
+    image_url: new URL("../../assets/images/product/car_2.png", import.meta.url),
+    description: "石墨轴承具有优良的特性。",
   },
   {
     content: "石墨转子 旋片 叶片",
-    image_url: getImgUrl("../../assets/images/product/car_3.png"),
-            description: "",
+    image_url: new URL("../../assets/images/product/car_3.png", import.meta.url),
+    description: "石墨转子、旋片和叶片是涡轮增压器和真空泵中的关键部件，具有优异的耐磨性和自润滑性能。",
   },
   {
     content: "石墨制品-石墨轴承",
-    image_url: getImgUrl("../../assets/images/product/car_4.png"),
-            description: "",
+    image_url: new URL("../../assets/images/product/car_4.png", import.meta.url),
+    description: "石墨轴承具有良好的自润滑性能和耐高温特性。",
   },
   {
     content: "石墨制品-转子",
-    image_url: getImgUrl("../../assets/images/product/car_5.png"),
-            description: "",
+    image_url: new URL("../../assets/images/product/car_5.png", import.meta.url),
+    description: "石墨转子广泛应用于汽车涡轮增压器中，具有良好的动平衡性能和耐高温特性。",
   },
   {
     content: "真空助力泵石墨转子",
-    image_url: getImgUrl("../../assets/images/product/car_6.png"),
-            description: "",
+    image_url: new URL("../../assets/images/product/car_6.png", import.meta.url),
+    description: "专为汽车真空助力泵设计的石墨转子，具有高精度、低摩擦和长寿命的特点。",
   },
 ];
