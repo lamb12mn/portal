@@ -13,7 +13,7 @@ const getImgUrl = (name) => {
   console.log('1111111111', new URL(name, import.meta.url + '/portal').href);
   
   // 本地开发环境
-  return new URL(name, import.meta.url + '/portal').href;
+  return new URL(name, import.meta.url).href;
 };
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页
