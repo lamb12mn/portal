@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+import { fileURLToPath, URL } from 'node:url'
 const prefix = '/portal/'
 // https://vite.dev/config/
 export default defineConfig({
@@ -8,10 +9,12 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@assets': path.resolve(__dirname, './src/assets'),
-      '@common': path.resolve(__dirname, './src/common'),
-      '@images': path.resolve(__dirname, './public/images'),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@/assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
+      '@/common': fileURLToPath(new URL('./src/common', import.meta.url)),
+      // '@/assets': path.resolve(__dirname, './src/assets'),
+      // '@/common': path.resolve(__dirname, './src/common'),
+      // '@images': path.resolve(__dirname, './public/images'),
     }
   },
   define: {
@@ -24,9 +27,25 @@ export default defineConfig({
     assetsDir: 'static',
     rollupOptions: {
       output: {
-        assetFileNames: 'assets/[name].[hash][extname]',
-        chunkFileNames: 'assets/[name].[hash].js',
-        entryFileNames: 'assets/[name].[hash].js'
+        // 按资源类型组织静态资源
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          let extType = info[info.length - 1];
+          
+          if (/\.(png|jpe?g|gif|svg|webp|avif)$/i.test(assetInfo.name)) {
+            return 'static/images/[name]-[hash][extname]';
+          }
+          
+          if (/\.(woff2?|eot|ttf|otf)$/i.test(assetInfo.name)) {
+            return 'static/fonts/[name]-[hash][extname]';
+          }
+          
+          if (/\.css$/i.test(assetInfo.name)) {
+            return 'static/css/[name]-[hash][extname]';
+          }
+          
+          return 'static/[name]-[hash][extname]';
+        }
       }
     }
   },

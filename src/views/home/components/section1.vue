@@ -39,10 +39,10 @@
                   </div>
                 </div>
                 <div class="h-full bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/image01.png" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/image01.png" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <!-- <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/image01.png" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/image01.png" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
@@ -87,11 +87,11 @@
                     <h3 class="w-48 text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
                 </div> -->
                 <div class="flex-1 bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <!-- <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" /> -->
+                <!-- <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" /> -->
                   <!-- <div class="w-48 bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
@@ -159,10 +159,10 @@
                   </div>
                 </div>
             <div class="flex-1 bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
               <!-- <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">标题</h3>
@@ -185,7 +185,7 @@
             >
               <div class="h-48 bg-gray-100 overflow-hidden relative">
                     <!-- 图片 -->
-                    <img src="@assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">标题</h3>
@@ -259,7 +259,7 @@
   .hours-card {
   border: none;
   border-radius: 24px;
-  background-image: url("@assets/images/home/banner01.jpg");
+  background-image: url("@/assets/images/home/banner01.jpg");
   background-size: cover;
 }
 }

@@ -1,11 +1,6 @@
-const getImgUrl = (name) => {
-  // 本地开发环境
-  const prefix = import.meta.env.VITE_BASE_URL;
-  const url = new URL(name, import.meta.url).href
-  const result = url.replace('/assets/', prefix + '/assets/').replace('\\', '/')
-  console.log('11111111111', import.meta, result);
-  return result
-};
+const getImgUrl = async (name) => {
+    return new URL(name, import.meta.url)
+}
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页0-9
   {
@@ -40,7 +35,7 @@ export const productsList = [
       "石墨制品耐高温、导电导热，广泛用于冶金、电子、机械等领域，是重要的工业基础材料。",
     description:
       "石墨制品是以高纯石墨为原料，通过精密加工制成的耐高温、导电导热性能优异的关键零部件。广泛应用于光伏、半导体、真空热处理等领域的加热器、坩埚、电极及结构件，是高温工艺设备的核心组件。",
-    imageUrl: getImgUrl("../../assets/images/home/product01.png"),
+    imageUrl: new URL("../../assets/images/home/product01.png", import.meta.url),
     category: "ai-tools",
     tip: "核心组件",
     features: [

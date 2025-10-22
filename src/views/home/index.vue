@@ -130,7 +130,7 @@
                 ></div>
                 <!-- 使用高质量开源AI技术相关图片替换 -->
                 <img
-                  src="@assets/images/home/banner01.jpg"
+                  src="@/assets/images/home/banner01.jpg"
                   alt="AI技术未来"
                   class="w-full h-full object-cover relative z-10"
                 />
@@ -498,15 +498,15 @@
                 class="w-12 h-12 rounded-lg flex items-center justify-center mr-3 text-white"
               >
                 <img
-                  src="@assets/images/home/icon1.png"
+                  src="@/assets/images/home/icon1.png"
                   v-if="project.icon == 'icon1.png'"
                 />
                 <img
-                  src="@assets/images/home/icon2.png"
+                  src="@/assets/images/home/icon2.png"
                   v-if="project.icon == 'icon2.png'"
                 />
                 <img
-                  src="@assets/images/home/icon3.png"
+                  src="@/assets/images/home/icon3.png"
                   v-if="project.icon == 'icon3.png'"
                 />
               </div>
@@ -1205,9 +1205,9 @@ import { useI18n } from "vue-i18n";
 import section1 from "./components/section1.vue";
 import section2 from "./components/section2.vue";
 import featuredProductsPage from "./components/featuredProducts.vue";
-// import product01 from "@assets/images/home/product01.png";
-// import product02 from "@assets/images/home/product02.png";
-// import product03 from "@assets/images/home/product03.png";
+// import product01 from "@/assets/images/home/product01.png";
+// import product02 from "@/assets/images/home/product02.png";
+// import product03 from "@/assets/images/home/product03.png";
 const { t, locale } = useI18n();
 
 // 将特色产品数据改为计算属性，以响应语言变化
