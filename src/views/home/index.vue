@@ -447,7 +447,7 @@
       </div>
     </section>
     <!-- 特色产品区域 -->
-    <!-- <featuredProductsPage /> -->
+    <featuredProductsPage />
 
     <!-- 产能布局 -->
     <section class="section bg-white relative overflow-hidden">
