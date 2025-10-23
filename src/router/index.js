@@ -100,6 +100,36 @@ const routes = [
       description: '' // Will be set dynamically by updateMetaInfo
     }
   },
+  // 新闻中心
+  {
+    path: '/newsCenter',
+    name: 'newsCenter',
+    component: () => import('../views/newsCenter/index.vue'),
+    meta: { 
+      title: '', // Will be set dynamically by updateMetaInfo
+      description: '' // Will be set dynamically by updateMetaInfo
+    }
+  },
+  // 新闻中心详情
+  {
+    path: '/newsCenter/:id',
+    name: 'newsCenter-detail',
+    component: () => import('../views/newsCenter/detail.vue'),
+    meta: { 
+      title: '', // Will be set dynamically by updateMetaInfo
+      description: '' // Will be set dynamically by updateMetaInfo
+    }
+  },
+  // 荣誉资质
+  {
+    path: '/honor',
+    name: 'honor',
+    component: () => import('../views/honor/index.vue'),
+    meta: { 
+      title: '', // Will be set dynamically by updateMetaInfo
+      description: '' // Will be set dynamically by updateMetaInfo
+    }
+  },
   {
     path: '/products',
     name: 'products',

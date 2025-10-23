@@ -1141,7 +1141,7 @@
         </p>
 
         <router-link
-          to="/about"
+          to="/contact"
           class="btn bg-white text-primary-600 hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
         >
           {{ t("home.contact.btnText") }}

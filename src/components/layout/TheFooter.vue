@@ -36,7 +36,8 @@
           <ul class="space-y-2">
             <li><router-link to="/" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.home') }}</router-link></li>
             <li><router-link to="/products" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.products') }}</router-link></li>
-            <li><router-link to="/projects" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.projects') }}</router-link></li>
+            <li><router-link to="/honor" class="text-gray-400 hover:text-primary-500 transition-colors">荣誉资质</router-link></li>
+            <li><router-link to="/newsCenter" class="text-gray-400 hover:text-primary-500 transition-colors">新闻中心</router-link></li>
             <li><router-link to="/about" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.about') }}</router-link></li>
           </ul>
         </div>
@@ -69,7 +70,7 @@
           <router-link to="/sitemap.xml" class="hover:text-primary-500 transition-colors">{{ t('footer.sitemap') }}</router-link>
           <router-link to="/privacy" class="hover:text-primary-500 transition-colors">{{ t('footer.privacyPolicy') }}</router-link>
           <router-link to="/terms" class="hover:text-primary-500 transition-colors">{{ t('footer.termsOfService') }}</router-link>
-          <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-primary-500 transition-colors">{{ t('footer.icp') }}</a>
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-primary-500 transition-colors">备案号： 粤ICP备14060263号-3 </a>
         </div>
       </div>
     </div>

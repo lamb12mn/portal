@@ -1,17 +1,21 @@
 export const navItems = [
   { i18nKey: "nav.home", path: "/", key: "home" }, // 首页0-9
-  {
-    i18nKey: "nav.graphiteProducts",
-    path: "/graphiteProducts",
-    key: "graphiteProducts",
-  }, // 石墨制品
-  {
-    i18nKey: "nav.applicationField",
-    path: "/applicationField",
-    key: "applicationField",
-  }, // 应用领域
+  // {
+  //   i18nKey: "nav.graphiteProducts",
+  //   path: "/graphiteProducts",
+  //   key: "graphiteProducts",
+  // }, // 石墨制品
+  // {
+  //   i18nKey: "nav.applicationField",
+  //   path: "/applicationField",
+  //   key: "applicationField",
+  // }, // 应用领域
   { i18nKey: "nav.products", path: "/products", key: "products" }, //
+  // 荣誉资质
+  { i18nKey: "nav.honor", path: "/honor", key: "honor" },
   // { i18nKey: "nav.projects", path: "/projects", key: "projects" }, // 开源项目
+  // 新闻中心
+  { i18nKey: "nav.newsCenter", path: "/newsCenter", key: "newsCenter" },
   { i18nKey: "nav.about", path: "/about", key: "about" }, // 关于我们
   { i18nKey: "nav.contact", path: "/contact", key: "contact" }, // 联系我们
 ];
@@ -1192,3 +1196,189 @@ export const automotiveField = [
     description: "专为汽车真空助力泵设计的石墨转子，具有高精度、低摩擦和长寿命的特点。",
   },
 ];
+
+ // 模拟新闻数据
+export const newsList = [
+  {
+    id: 1,
+    title: "新型高纯石墨材料在半导体行业的应用突破",
+    excerpt: "随着半导体技术不断发展，对材料纯度的要求越来越高。我们研发的新型高纯石墨材料在杂质控制方面取得重大突破...",
+    date: "2024-06-15",
+    category: "技术发展",
+    image: new URL('@/assets/images/news/news1.png', import.meta.url).href,
+    content: [
+      "随着半导体技术不断发展，对材料纯度的要求越来越高。我们研发的新型高纯石墨材料在杂质控制方面取得重大突破，为半导体行业提供了更加可靠的材料选择。",
+      "该材料采用先进的提纯工艺，将杂质含量控制在十亿分之一(ppb)级别，显著优于传统石墨材料。这一突破对于生产高性能芯片和半导体器件具有重要意义。",
+      "在实际应用测试中，新型高纯石墨材料表现出了优异的热稳定性和化学惰性，能够在高温和强腐蚀环境下长期稳定工作。多家知名半导体制造商已开始采用该材料进行试生产。",
+      "公司技术负责人表示，这一技术突破不仅提升了产品性能，也为整个行业树立了新的标准。未来我们将继续加大研发投入，推动石墨材料技术的进一步发展。"
+    ],
+    
+  },
+  {
+    id: 2,
+    title: "石墨制品在新能源汽车领域的市场需求增长",
+    excerpt: "随着全球新能源汽车产业快速发展，石墨制品作为关键材料之一，市场需求呈现显著增长趋势...",
+    date: "2024-06-10",
+    category: "市场分析",
+    image: new URL('@/assets/images/news/news2.png', import.meta.url).href,
+    content: [
+      "随着全球新能源汽车产业快速发展，石墨制品作为关键材料之一，市场需求呈现显著增长趋势。据行业分析报告显示，未来五年该领域对石墨制品的需求年均增长率预计将达到15%以上。",
+      "石墨制品在新能源汽车中主要用于电池负极材料、燃料电池组件以及散热系统等关键部位。其优异的导电性、导热性和化学稳定性使其成为不可或缺的核心材料。",
+      "为了满足日益增长的市场需求，公司已投资扩建生产线，提升石墨制品的产能和质量。同时，我们也在积极研发适用于新能源汽车的新型石墨材料，以满足行业发展的新需求。",
+      "业内专家预测，随着各国对碳排放要求的不断提高以及消费者对新能源汽车接受度的持续提升，石墨制品在该领域的应用前景将更加广阔。"
+    ]
+  },
+  {
+    id: 3,
+    title: "环保型石墨制品生产工艺获得国家专利认证",
+    excerpt: "公司自主研发的环保型石墨制品生产工艺近日获得国家知识产权局颁发的发明专利证书...",
+    date: "2024-06-05",
+    category: "企业动态",
+    image: new URL('@/assets/images/news/news3.png', import.meta.url).href,
+    content: [
+      "公司自主研发的环保型石墨制品生产工艺近日获得国家知识产权局颁发的发明专利证书，标志着公司在绿色制造领域取得重要进展。",
+      "该工艺通过优化生产流程和采用新型环保材料，大幅减少了生产过程中的废气、废水排放，同时提高了资源利用率。与传统工艺相比，新工艺可减少碳排放30%以上。",
+      "此项技术突破不仅符合国家环保政策要求，也为企业带来了显著的经济效益。通过节能减排，生产成本得到有效控制，产品质量也得到进一步提升。",
+      "公司将继续坚持绿色发展理念，加大环保技术研发投入，为行业可持续发展贡献力量。"
+    ]
+  },
+  {
+    id: 4,
+    title: "石墨材料在光伏产业中的应用前景展望",
+    excerpt: "在全球碳中和目标推动下，光伏产业迎来快速发展期，石墨材料作为关键辅材需求持续增长...",
+    date: "2024-05-28",
+    category: "行业趋势",
+    image: new URL('@/assets/images/news/news4.png', import.meta.url).href,
+    content: [
+      "在全球碳中和目标推动下，光伏产业迎来快速发展期，石墨材料作为关键辅材需求持续增长。专家预测，未来十年该领域将成为石墨材料应用的重要增长点。",
+      "石墨材料在光伏产业中主要用于制造硅锭、硅片的坩埚和加热器等关键设备。其优异的高温性能和化学稳定性对于保证光伏产品质量至关重要。",
+      "随着光伏技术不断进步，对石墨材料的纯度、密度和使用寿命提出了更高要求。公司已针对这一趋势开发了专用石墨材料，已在多家知名光伏企业得到应用。",
+      "展望未来，石墨材料在光伏产业中的应用将更加广泛，特别是在高效电池和新型光伏技术领域，将为行业发展提供强有力的材料支撑。"
+    ]
+  },
+  {
+    id: 5,
+    title: "高温抗氧化涂层技术提升石墨制品使用寿命",
+    excerpt: "通过创新的涂层技术，石墨制品在高温环境下的抗氧化性能得到显著提升，使用寿命延长30%以上...",
+    date: "2024-05-20",
+    category: "技术创新",
+    image: new URL('@/assets/images/news/news5.png', import.meta.url).href,
+    content: [
+      "通过创新的涂层技术，石墨制品在高温环境下的抗氧化性能得到显著提升，使用寿命延长30%以上，这一技术突破为客户带来了显著的经济效益。",
+      "新开发的抗氧化涂层采用多层复合结构，能够有效阻隔氧气与石墨基体的接触，同时保持材料原有的导热和导电性能。在1500°C以上的高温环境下，涂层稳定性表现优异。",
+      "该技术已成功应用于多个工业领域，特别是在半导体和光伏产业的高温工艺设备中，显著降低了设备维护成本和停机时间。",
+      "研发团队表示，未来将继续优化涂层配方和涂覆工艺，进一步提升石墨制品的性能，满足更多高端应用场景的需求。"
+    ]
+  },
+  {
+    id: 6,
+    title: "公司石墨制品成功进入欧洲高端制造市场",
+    excerpt: "经过严格的资质审核和产品测试，公司石墨制品正式获得欧洲多家知名制造商的采购订单...",
+    date: "2024-05-15",
+    category: "国际合作",
+    image: new URL('@/assets/images/news/news6.png', import.meta.url).href,
+    content: [
+      "经过严格的资质审核和产品测试，公司石墨制品正式获得欧洲多家知名制造商的采购订单，标志着公司产品成功进入国际高端市场。",
+      "此次获得订单的客户包括德国、法国和瑞典的多家知名工业制造企业，产品将用于其核心生产设备的关键部件。这充分体现了国际市场对公司产品质量和技术水平的认可。",
+      "为了满足欧洲市场的严格标准，公司专门建立了符合国际认证标准的生产线，并通过了ISO 9001、ISO 14001等多项国际认证。",
+      "公司负责人表示，这是公司国际化战略的重要里程碑，未来将继续加大海外市场开拓力度，提升品牌国际影响力。"
+    ]
+  }
+]
+export const certificates = [
+        {
+          title: 'ISO9001质量管理体系认证',
+          date: '2020年',
+          description: '证书内容涉及质量管理体系，符合ISO 9001标准',
+          image: new URL('@/assets/images/honor/cert1.png', import.meta.url)
+        },
+        {
+          title: 'IATF16949 质量体系认证',
+          date: '2019年',
+          description: '针对汽车行业的质量管理体系标准，适用于汽车及相关零部件的生产和服',
+          image: new URL('@/assets/images/honor/cert2.png', import.meta.url)
+        },
+        {
+          title: 'ISO14001 环境体系认证',
+          date: '2021年',
+          description: '环境管理体系认证，旨在减少企业对环境的影响，实现可持续发展',
+          image: new URL('@/assets/images/honor/cert3.png', import.meta.url)
+        },
+        {
+          title: 'ISO45001 职业健康体系认证',
+          date: '2021年',
+          description: '职业健康与安全管理体系认证，保障员工工作场所的安全与健康',
+          image: new URL('@/assets/images/honor/cert4.png', import.meta.url)
+        }
+      ]
+export const awards = [
+        {
+          title: '广东省制造业单项冠军产品',
+          date: '2023年4月15日—2025年4月15日',
+          description: '颁发单位：广东省工业和信息化厅,产品名称：太阳能电池片（硅）PECVD双面镀膜石墨舟'
+        },
+        {
+          title: '专精特新“小巨人”企业',
+          date: '2022年9月6日—2025年9月5日',
+          description: '颁发单位：工业和信息化部'
+        },
+        {
+          title: '广东省科学技术一等奖',
+          date: '至今',
+          description: '颁发单位：广东省科学技术奖评审委员会,项目名称：高精度石墨材料制备技术及关键装备研发与应用'
+        },
+        {
+          title: '高新技术企业证书',
+          date: '2024年11月1日',
+          description: '颁发单位：广东省科学技术厅、广东省财政厅、国家税务总局广东省税务局'
+        },
+        {
+          title: '连续三年深圳市百强创新企业',
+          date: '至今',
+          description: '颁发单位：深圳市企业联合会、深圳市企业家协会,荣誉说明：经评选，公司荣获“第六届深圳市自主创新百强中小企业”称号'
+        },
+        // 添加的新荣誉资质
+        {
+          title: '国家知识产权优势企业',
+          date: '2022年10月—2025年9月',
+          description: '颁发单位：国家知识产权局'
+        },
+        {
+          title: '研究生联合培养示范点',
+          date: '2024年—2026年',
+          description: '颁发单位：粤港澳大湾区（佛山）先进制造产业联合研究生院'
+        },
+        {
+          title: '中国专利优秀奖',
+          date: '至今',
+          description: '颁发单位：国家知识产权局,专利名称：一种用于半导体设备的石墨部件及其制备方法'
+        },
+        {
+          title: '中国机械制造工艺科技一等奖',
+          date: '至今',
+          description: '颁发单位：中国机械制造工艺协会,项目名称：高精度石墨材料制备技术及关键装备研发与应用'
+        }
+      ]
+      
+      export const partners = [
+        {
+          name: 'XX科技集团',
+          description: '长期战略合作关系，在技术研发方面深入合作',
+          logo: new URL('@/assets/images/honor/partner1.png', import.meta.url)
+        },
+        {
+          name: 'YY工业公司',
+          description: '重要客户，产品广泛应用于其生产线',
+          logo: new URL('@/assets/images/honor/partner2.png', import.meta.url)
+        },
+        {
+          name: 'ZZ研究院',
+          description: '产学研合作伙伴，共同推进石墨材料前沿研究',
+          logo: new URL('@/assets/images/honor/partner3.png', import.meta.url)
+        },
+        {
+          name: 'AA新能源',
+          description: '新能源领域深度合作',
+          logo: new URL('@/assets/images/honor/partner4.png', import.meta.url)
+        }
+      ]

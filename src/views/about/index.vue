@@ -205,7 +205,7 @@
     </section>
 
     <!-- 技能区域 -->
-    <section class="py-24 relative z-10 bg-slate-50 overflow-hidden">
+    <section class="py-24 relative z-10 bg-slate-50 overflow-hidden" v-if="false">
       <div class="container mx-auto px-6">
         <!-- 标题 -->
         <div class="text-center mb-20 relative">
@@ -346,8 +346,615 @@
       </div>
     </section>
 
-    <!-- 核心价值观区域 -->
+    <!-- 企业初心区域 -->
+    <section class="py-24 relative z-10 bg-white overflow-hidden">
+      <!-- 背景装饰 -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none"
+      ></div>
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="h-full w-full"
+          style="
+            background-image: radial-gradient(
+              circle,
+              rgba(0, 0, 0, 0.2) 1px,
+              transparent 1px
+            );
+            background-size: 30px 30px;
+          "
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 relative">
+        <!-- 标题 -->
+        <div class="text-center mb-20 relative">
+          <div
+            class="inline-block absolute -top-10 left-1/2 transform -translate-x-1/2"
+          >
+            <span
+              class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </span>
+          </div>
+          <span
+            class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
+            >从材料专家到系统伙伴的升华</span
+          >
+          <h2
+            class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
+          >
+            <span class="relative inline-block mx-2">
+              <span class="text-primary-600 font-bold">企业初心</span>
+              <span
+                class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
+              ></span>
+            </span>
+          </h2>
+          <p
+            class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
+          >
+            我们的初心已演进为：成为客户在极限制造领域最值得信赖的"系统伙伴"。我们不仅提供顶尖的核心材料，更提供从材料选型、结构设计到寿命管理的全方位支持。
+          </p>
+          <div
+            class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
+          ></div>
+        </div>
+
+        <!-- 初心内容 -->
+        <div
+          class="relative z-10 bg-gradient-to-br from-slate-50 to-white overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 relative overflow-hidden"
+          >
+            <!-- 背景装饰 -->
+            <div
+              class="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-full -mr-32 -mt-32"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-40 h-40 bg-primary-50 rounded-full -ml-20 -mb-20"
+            ></div>
+
+            <div class="relative z-10">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+                <!-- 左侧：实验室特写 -->
+                <div
+                  class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up card-glass relative overflow-hidden"
+                  style="animation-delay: 300ms"
+                >
+                  <!-- 科技感装饰元素 -->
+                  <div class="absolute inset-0 pointer-events-none">
+                    <div
+                      class="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-full -mr-16 -mt-16 blur-xl"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-0 w-24 h-24 bg-secondary-500/5 rounded-full -ml-12 -mb-12 blur-xl"
+                    ></div>
+                  </div>
+
+                  <!-- 悬浮效果遮罩 -->
+                  <div
+                    class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:to-primary-500/10 rounded-xl transition-colors duration-300"
+                  ></div>
+                  <div class="flex flex-col h-full relative z-10">
+                    <div class="mb-4">
+                      <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-500 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-600 mb-3">
+                      材料科学专注
+                    </h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                      图中精密仪器前，研究人员全神贯注进行材料分析，体现了对材料科学的深入探索和不懈追求，彰显专业精神。
+                    </p>
+                    <div
+                      class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-72 overflow-hidden relative"
+                    >
+                      <img
+                        src="@/assets/images/about/originalAspiration1.png"
+                        alt="材料科学专注"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 右侧：团队协作originalAspiration -->
+                <div
+                  class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up card-glass relative overflow-hidden"
+                  style="animation-delay: 500ms"
+                >
+                  <!-- 科技感装饰元素 -->
+                  <div class="absolute inset-0 pointer-events-none">
+                    <div
+                      class="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-full -mr-16 -mt-16 blur-xl"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-0 w-24 h-24 bg-secondary-500/5 rounded-full -ml-12 -mb-12 blur-xl"
+                    ></div>
+                  </div>
+
+                  <!-- 悬浮效果遮罩 -->
+                  <div
+                    class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:to-primary-500/10 rounded-xl transition-colors duration-300"
+                  ></div>
+                  <div class="flex flex-col h-full relative z-10">
+                    <div class="mb-4">
+                      <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-500 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-600 mb-3">
+                      系统伙伴协作
+                    </h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                      应用工程师与客户团队在产线旁深入交流，协同探讨技术方案，展现我们贴近现场、快速响应的全方位系统支持能力。
+                    </p>
+                   <div
+                      class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-72 overflow-hidden relative"
+                    >
+                      <img
+                        src="@/assets/images/about/originalAspiration2.png"
+                        alt="材料科学专注"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 企业使命区域 -->
+    <section class="py-24 relative z-10 bg-white overflow-hidden">
+      <!-- 背景装饰 -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none"
+      ></div>
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="h-full w-full"
+          style="
+            background-image: radial-gradient(
+              circle,
+              rgba(0, 0, 0, 0.2) 1px,
+              transparent 1px
+            );
+            background-size: 30px 30px;
+          "
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 relative">
+        <!-- 标题 -->
+        <div class="text-center mb-20 relative">
+          <div
+            class="inline-block absolute -top-10 left-1/2 transform -translate-x-1/2"
+          >
+            <span
+              class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </span>
+          </div>
+          <span
+            class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
+            >价值创造的三大维度</span
+          >
+          <h2
+            class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
+          >
+            <span class="relative inline-block mx-2">
+              <span class="text-primary-600 font-bold">企业使命</span>
+              <span
+                class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
+              ></span>
+            </span>
+          </h2>
+          <p
+            class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
+          >
+            为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台
+          </p>
+          <div
+            class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
+          ></div>
+        </div>
+
+        <!-- 使命内容 -->
+        <div
+          class="relative z-10 bg-gradient-to-br from-slate-50 to-white overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 relative overflow-hidden"
+          >
+            <!-- 背景装饰 -->
+            <div
+              class="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-full -mr-32 -mt-32"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-40 h-40 bg-primary-50 rounded-full -ml-20 -mb-20"
+            ></div>
+
+            <div class="relative z-10">
+              <p
+                class="text-xl mb-12 italic text-center text-gray-700 border-l-4 border-primary-500 border-l-0 border-t-0 border-r-0 border-b py-4"
+              >
+                以材料与技术的集成创新，为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台。
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div
+                  v-for="(item, index) in missions"
+                  :key="index"
+                  class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up card-glass relative overflow-hidden"
+                  :class="{
+                    'animation-delay-100': index === 0,
+                    'animation-delay-300': index === 1,
+                    'animation-delay-500': index === 2,
+                  }"
+                >
+                  <!-- 科技感装饰元素 -->
+                  <div class="absolute inset-0 pointer-events-none">
+                    <div
+                      class="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-full -mr-16 -mt-16 blur-xl"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-0 w-24 h-24 bg-secondary-500/5 rounded-full -ml-12 -mb-12 blur-xl"
+                    ></div>
+                  </div>
+
+                  <!-- 悬浮效果遮罩 -->
+                  <div
+                    class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:to-primary-500/10 rounded-xl transition-colors duration-300"
+                  ></div>
+                  <div class="flex flex-col h-full relative z-10">
+                    <div class="mb-4">
+                      <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-500 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            :d="item.icon"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-600 mb-3">
+                      {{ item.title }}
+                    </h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                      {{ item.description }}
+                    </p>
+                    <div
+                      class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-52 overflow-hidden relative"
+                    >
+                      <img
+                        :src="item.imageUrl"
+                        :alt="item.imageText"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 企业愿景区域 -->
     <section class="py-24 relative z-10 bg-slate-50 overflow-hidden">
+      <!-- 背景装饰 -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="h-full w-full"
+          style="
+            background-image: radial-gradient(
+              circle,
+              rgba(0, 0, 0, 0.2) 1px,
+              transparent 1px
+            );
+            background-size: 30px 30px;
+          "
+        ></div>
+      </div>
+      
+      <div class="container mx-auto px-6 relative">
+        <!-- 标题 -->
+        <div class="text-center mb-20 relative">
+          <div
+            class="inline-block absolute -top-10 left-1/2 transform -translate-x-1/2"
+          >
+            <span
+              class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </span>
+          </div>
+          <span
+            class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
+            >三位一体的未来蓝图</span
+          >
+          <h2
+            class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
+          >
+            <span class="relative inline-block mx-2">
+              <span class="text-primary-600 font-bold">企业愿景</span>
+              <span
+                class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
+              ></span>
+            </span>
+          </h2>
+          <p
+            class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
+          >
+            成为全球领先的高端制造集成服务商，以材料为核心，以技术为延伸，构建一个高效、协同、可持续的工业新生态
+          </p>
+          <div
+            class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
+          ></div>
+        </div>
+
+        <!-- 愿景内容 -->
+        <div class="relative z-10">
+          <div
+            class="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 relative overflow-hidden card-glass"
+          >
+            <!-- 科技感装饰元素 -->
+            <div class="absolute inset-0 pointer-events-none">
+              <div
+                class="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full -ml-32 -mt-32 blur-3xl animate-pulse-slow"
+              ></div>
+              <div
+                class="absolute bottom-0 right-1/4 w-48 h-48 bg-violet-500/10 rounded-full -mr-24 -mb-24 blur-3xl animate-pulse-slow animation-delay-1000"
+              ></div>
+            </div>
+            
+            <div class="relative z-10">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- 概念图区域 -->
+                <div class="relative">
+                  <div class="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-gradient-to-br from-gray-900 to-black p-8">
+                    <!-- 背景网格 -->
+                    <div class="absolute inset-0 opacity-20">
+                      <div 
+                        class="w-full h-full"
+                        style="background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+                               background-size: 30px 30px;"
+                      ></div>
+                    </div>
+                    
+                    <!-- 中央核心材料 -->
+                    <div class="relative flex justify-center items-center h-64">
+                      <div class="relative z-20">
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-violet-600 rounded-xl transform rotate-45 shadow-2xl flex items-center justify-center animate-pulse-slow">
+                          <div class="w-16 h-16 bg-white/20 rounded transform -rotate-45"></div>
+                        </div>
+                        <p class="text-white text-center mt-4 font-medium">核心材料</p>
+                      </div>
+                      
+                      <!-- 光路连接 -->
+                      <div class="absolute inset-0">
+                        <!-- 连接到半导体芯片 -->
+                        <div class="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 opacity-0 animate-fade-in-up animation-delay-300">
+                          <div class="flex flex-col items-center">
+                            <div class="w-1 h-20 bg-gradient-to-b from-blue-500/50 to-transparent mb-2 animate-pulse"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                              </svg>
+                            </div>
+                            <p class="text-white text-sm mt-2 text-center">半导体芯片</p>
+                          </div>
+                        </div>
+                        
+                        <!-- 连接到航空航天器 -->
+                        <div class="absolute top-1/4 right-1/4 transform translate-x-1/2 -translate-y-1/2 opacity-0 animate-fade-in-up animation-delay-500">
+                          <div class="flex flex-col items-center">
+                            <div class="w-1 h-20 bg-gradient-to-b from-violet-500/50 to-transparent mb-2 animate-pulse animation-delay-200"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-violet-400 to-violet-600 rounded-full flex items-center justify-center shadow-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </div>
+                            <p class="text-white text-sm mt-2 text-center">航空航天</p>
+                          </div>
+                        </div>
+                        
+                        <!-- 连接到新能源汽车 -->
+                        <div class="absolute bottom-1/4 left-1/3 transform -translate-x-1/2 translate-y-1/2 opacity-0 animate-fade-in-up animation-delay-700">
+                          <div class="flex flex-col items-center">
+                            <div class="w-1 h-20 bg-gradient-to-t from-blue-500/50 to-transparent mb-2 animate-pulse animation-delay-400"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-violet-500 rounded-lg flex items-center justify-center shadow-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p class="text-white text-sm mt-2 text-center">新能源汽车</p>
+                          </div>
+                        </div>
+                        
+                        <!-- 连接到工业生态 -->
+                        <div class="absolute bottom-1/4 right-1/3 transform translate-x-1/2 translate-y-1/2 opacity-0 animate-fade-in-up animation-delay-900">
+                          <div class="flex flex-col items-center">
+                            <div class="w-1 h-20 bg-gradient-to-t from-violet-500/50 to-transparent mb-2 animate-pulse animation-delay-600"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-violet-500 to-blue-500 rounded-lg flex items-center justify-center shadow-lg">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </div>
+                            <p class="text-white text-sm mt-2 text-center">工业生态</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- 网络生态图 -->
+                      <div class="absolute inset-0 flex items-center justify-center opacity-0 animate-fade-in-up animation-delay-1100">
+                        <div class="w-48 h-48 rounded-full border-2 border-blue-400/30 flex items-center justify-center animate-ping-slow">
+                          <div class="w-40 h-40 rounded-full border-2 border-violet-400/50 flex items-center justify-center animate-ping-slow animation-delay-500">
+                            <div class="w-32 h-32 rounded-full border-2 border-blue-400/70 flex items-center justify-center animate-ping-slow animation-delay-1000">
+                              <div class="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center">
+                                <span class="text-white text-xs text-center font-medium">协作网络</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 装饰粒子 -->
+                  <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-blue-400/30 blur-sm animate-float animation-delay-200"></div>
+                  <div class="absolute -bottom-4 -right-4 w-6 h-6 rounded-full bg-violet-400/30 blur-sm animate-float animation-delay-700"></div>
+                </div>
+                
+                <!-- 文案区域 -->
+                <div class="opacity-0 animate-fade-in-up animation-delay-300">
+                  <h3 class="text-2xl font-bold text-primary-600 mb-6">
+                    构建高效、协同、可持续的工业新生态
+                  </h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    我们的愿景是成为全球领先的高端制造集成服务商。以材料为核心，以技术为延伸，构建一个高效、协同、可持续的工业新生态。
+                  </p>
+                  <div class="space-y-4">
+                    <div class="flex items-start group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">以材料为核心</h4>
+                        <p class="text-gray-600">依托核心材料技术，打造行业领先的材料解决方案，成为客户最信赖的材料专家。</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-start group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center group-hover:bg-violet-500 transition-colors duration-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-violet-500 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">以技术为延伸</h4>
+                        <p class="text-gray-600">通过持续的技术创新和集成式研发，将核心材料技术延伸至更多应用领域。</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-start group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">构建工业新生态</h4>
+                        <p class="text-gray-600">打造高效、协同、可持续的工业生态系统，与合作伙伴共同成长，实现共赢。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 核心价值观区域 -->
+    <section class="py-24 relative z-10 bg-white overflow-hidden">
       <!-- 背景装饰 -->
       <div class="absolute inset-0 opacity-5">
         <div
@@ -681,9 +1288,8 @@
         </div>
       </div>
     </section>
-
-    <!-- 企业使命区域 -->
-    <section class="py-24 relative z-10 bg-white overflow-hidden">
+    <!-- 产品与技术实力区域 -->
+    <section class="py-24 relative z-10 bg-slate-50 overflow-hidden">
       <!-- 背景装饰 -->
       <div
         class="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none"
@@ -722,20 +1328,20 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="1.5"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
             </span>
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >价值创造的三大维度</span
+            >从核心材料到集成服务</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">企业使命</span>
+              <span class="text-primary-600 font-bold">产品与技术实力</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -744,95 +1350,160 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台
+            我们提供覆盖全链条的产品矩阵，并通过五大核心技术平台，确保从材料到价值的完美转化
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
           ></div>
         </div>
 
-        <!-- 使命内容 -->
-        <div
-          class="relative z-10 bg-gradient-to-br from-slate-50 to-white overflow-hidden"
-        >
+        <!-- 产品技术内容 -->
+        <div class="relative z-10">
           <div
-            class="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 relative overflow-hidden"
+            class="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 relative overflow-hidden card-glass"
           >
-            <!-- 背景装饰 -->
-            <div
-              class="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-full -mr-32 -mt-32"
-            ></div>
-            <div
-              class="absolute bottom-0 left-0 w-40 h-40 bg-primary-50 rounded-full -ml-20 -mb-20"
-            ></div>
-
+            <!-- 科技感装饰元素 -->
+            <div class="absolute inset-0 pointer-events-none">
+              <div
+                class="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full -ml-32 -mt-32 blur-3xl animate-pulse-slow"
+              ></div>
+              <div
+                class="absolute bottom-0 right-1/4 w-48 h-48 bg-violet-500/10 rounded-full -mr-24 -mb-24 blur-3xl animate-pulse-slow animation-delay-1000"
+              ></div>
+            </div>
+            
             <div class="relative z-10">
-              <p
-                class="text-xl mb-12 italic text-center text-gray-700 border-l-4 border-primary-500 border-l-0 border-t-0 border-r-0 border-b py-4"
-              >
-                以材料与技术的集成创新，为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台。
-              </p>
-
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                <div
-                  v-for="(item, index) in missions"
-                  :key="index"
-                  class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 opacity-0 animate-fade-in-up card-glass relative overflow-hidden"
-                  :class="{
-                    'animation-delay-100': index === 0,
-                    'animation-delay-300': index === 1,
-                    'animation-delay-500': index === 2,
-                  }"
-                >
-                  <!-- 科技感装饰元素 -->
-                  <div class="absolute inset-0 pointer-events-none">
-                    <div
-                      class="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-full -mr-16 -mt-16 blur-xl"
-                    ></div>
-                    <div
-                      class="absolute bottom-0 left-0 w-24 h-24 bg-secondary-500/5 rounded-full -ml-12 -mb-12 blur-xl"
-                    ></div>
-                  </div>
-
-                  <!-- 悬浮效果遮罩 -->
-                  <div
-                    class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:to-primary-500/10 rounded-xl transition-colors duration-300"
-                  ></div>
-                  <div class="flex flex-col h-full relative z-10">
-                    <div class="mb-4">
-                      <span
-                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-500 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            :d="item.icon"
-                          />
-                        </svg>
-                      </span>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- 产品矩阵图 -->
+                <div class="relative">
+                  <div class="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-gradient-to-br from-gray-900 to-black p-8">
+                    <!-- 背景网格 -->
+                    <div class="absolute inset-0 opacity-20">
+                      <div 
+                        class="w-full h-full"
+                        style="background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+                               background-size: 30px 30px;"
+                      ></div>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-600 mb-3">
-                      {{ item.title }}
-                    </h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                      {{ item.description }}
-                    </p>
-                    <div
-                      class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-52 overflow-hidden relative"
-                    >
-                      <img
-                        :src="item.imageUrl"
-                        :alt="item.imageText"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
+                    
+                    <!-- 产品矩阵 -->
+                    <div class="relative grid grid-cols-2 gap-8 h-80">
+                      <!-- 左上：基石材料 -->
+                      <div class="relative flex flex-col items-center justify-center opacity-0 animate-fade-in-up animation-delay-100">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg shadow-2xl flex items-center justify-center mb-3 transform rotate-3">
+                          <div class="w-14 h-14 bg-gradient-to-br from-gray-300 to-gray-500 rounded-sm"></div>
+                        </div>
+                        <p class="text-white text-center text-sm font-medium">基石材料</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">高纯石墨块材</p>
+                      </div>
+                      
+                      <!-- 右上：核心制品 -->
+                      <div class="relative flex flex-col items-center justify-center opacity-0 animate-fade-in-up animation-delay-300">
+                        <div class="w-20 h-20 mx-auto flex items-center justify-center mb-3">
+                          <div class="relative">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg transform -rotate-12">
+                              <div class="w-10 h-10 bg-blue-300 rounded-full"></div>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full border-2 border-gray-900"></div>
+                          </div>
+                        </div>
+                        <p class="text-white text-center text-sm font-medium">核心制品</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">精密石墨模具</p>
+                      </div>
+                      
+                      <!-- 左下：先进复合材料 -->
+                      <div class="relative flex flex-col items-center justify-center opacity-0 animate-fade-in-up animation-delay-500">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-violet-500 to-violet-700 rounded-lg shadow-2xl flex items-center justify-center mb-3 transform -rotate-3">
+                          <div class="w-14 h-14 bg-gradient-to-br from-violet-400 to-violet-600 rounded-lg flex items-center justify-center">
+                            <div class="grid grid-cols-2 gap-1">
+                              <div class="w-2 h-2 bg-violet-300 rounded-full"></div>
+                              <div class="w-2 h-2 bg-violet-300 rounded-full"></div>
+                              <div class="w-2 h-2 bg-violet-300 rounded-full"></div>
+                              <div class="w-2 h-2 bg-violet-300 rounded-full"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text-white text-center text-sm font-medium">先进复合材料</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">碳碳复合材料</p>
+                      </div>
+                      
+                      <!-- 右下：表面增强服务 -->
+                      <div class="relative flex flex-col items-center justify-center opacity-0 animate-fade-in-up animation-delay-700">
+                        <div class="w-20 h-20 mx-auto flex items-center justify-center mb-3">
+                          <div class="relative">
+                            <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg shadow-lg transform rotate-6 flex items-center justify-center">
+                              <div class="w-12 h-12 bg-gradient-to-br from-cyan-300 to-cyan-500 rounded-md"></div>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-md border-2 border-gray-900 transform rotate-12 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text-white text-center text-sm font-medium">表面增强服务</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">CVD涂层处理</p>
+                      </div>
+                      
+                      <!-- 中央连接线 -->
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full border-2 border-blue-400/30 flex items-center justify-center animate-ping-slow">
+                          <div class="w-12 h-12 rounded-full border-2 border-violet-400/50 flex items-center justify-center">
+                            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500/50 to-violet-500/50"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 装饰粒子 -->
+                  <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-blue-400/30 blur-sm animate-float animation-delay-200"></div>
+                  <div class="absolute -bottom-4 -right-4 w-6 h-6 rounded-full bg-violet-400/30 blur-sm animate-float animation-delay-700"></div>
+                </div>
+                
+                <!-- 技术服务图 -->
+                <div class="opacity-0 animate-fade-in-up animation-delay-300">
+                  <h3 class="text-2xl font-bold text-primary-600 mb-6">
+                    材料分析 - 设计 - 应用优化一体化服务
+                  </h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    我们提供覆盖全链条的产品矩阵，并通过五大核心技术平台，确保从材料到价值的完美转化。
+                  </p>
+                  <div class="space-y-6">
+                    <div class="flex group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300">
+                          <span class="text-blue-500 font-bold group-hover:text-white">1</span>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">材料分析</h4>
+                        <p class="text-gray-600">通过先进的材料表征技术，深入分析材料的微观结构、成分分布和性能特征。</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center group-hover:bg-violet-500 transition-colors duration-300">
+                          <span class="text-violet-500 font-bold group-hover:text-white">2</span>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">精密设计</h4>
+                        <p class="text-gray-600">基于材料特性进行结构设计和工艺优化，确保产品满足客户的特定应用需求。</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex group">
+                      <div class="flex-shrink-0 mt-1 mr-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300">
+                          <span class="text-blue-500 font-bold group-hover:text-white">3</span>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-gray-800 mb-1">应用优化</h4>
+                        <p class="text-gray-600">提供现场技术支持和应用指导，持续优化产品性能和使用寿命。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -842,9 +1513,9 @@
         </div>
       </div>
     </section>
-
+    <demo />
     <!-- 经历区域 -->
-    <section class="py-24 relative z-10 bg-white overflow-hidden">
+    <section class="py-24 relative z-10 bg-slate-50 overflow-hidden">
       <!-- 背景装饰 -->
       <div
         class="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none"
@@ -883,7 +1554,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="1.5"
-                  d="M8 7V3m8 4V3m-9 8h10M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
             </span>
@@ -1009,9 +1680,9 @@
         </div>
       </div>
     </section>
-
+    
     <!-- 联系区域 -->
-    <section class="py-24 relative z-10 bg-slate-50 overflow-hidden">
+    <section class="py-24 relative z-10 bg-white overflow-hidden">
       <!-- 背景装饰 -->
       <div class="absolute inset-0 opacity-30 pointer-events-none">
         <div
@@ -1216,7 +1887,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
-
+import demo from "./components/demo.vue";
 const { t } = useI18n();
 
 // 技能数据

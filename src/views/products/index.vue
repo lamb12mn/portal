@@ -17,6 +17,17 @@
       <div
         class="absolute -bottom-20 -right-20 w-64 h-64 bg-secondary-400/30 rounded-full blur-3xl opacity-40"
       ></div>
+      <!-- 动态漂浮元素 -->
+      <div class="absolute top-1/4 left-1/4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm animate-float"></div>
+      <div class="absolute top-1/3 right-1/3 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm animate-float animation-delay-1000"></div>
+      <div class="absolute bottom-1/4 left-1/3 w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm animate-float animation-delay-2000"></div>
+
+      <!-- 新增动态粒子 -->
+      <div class="absolute top-1/3 left-1/2 w-2 h-2 rounded-full bg-white/40 animate-ping animation-delay-500"></div>
+      <div class="absolute top-2/5 right-1/4 w-1.5 h-1.5 rounded-full bg-blue-300/60 animate-pulse animation-delay-1000"></div>
+      <div class="absolute bottom-1/4 left-1/3 w-1 h-1 rounded-full bg-primary-200/50 animate-ping animation-delay-1500"></div>
+      <div class="absolute top-3/4 right-1/3 w-2 h-2 rounded-full bg-secondary-300/40 animate-pulse animation-delay-2000"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-accent-200/50 animate-ping animation-delay-2500"></div>
 
       <div class="container-custom relative z-10">
         <div
@@ -26,7 +37,7 @@
             <span
               class="inline-block w-2 h-2 rounded-full bg-white mr-2 animate-pulse"
             ></span>
-            {{ t("products.hero.badge") }}
+            探索石墨产品应用
           </span>
         </div>
 
