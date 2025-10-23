@@ -249,7 +249,7 @@ const { t, locale } = useI18n();
 
 /* 修改页面头部样式以匹配其他页面的Hero区域风格 */
 .page-header {
-  background: linear-gradient(rgba(37, 99, 235, 0.8), rgba(29, 78, 216, 0.9)), url('@/assets/images/hero-bg.jpg') center/cover no-repeat;
+  /* background: linear-gradient(rgba(37, 99, 235, 0.8), rgba(29, 78, 216, 0.9)), url('@/assets/images/hero-bg.jpg') center/cover no-repeat; */
   padding: 80px 0;
   text-align: center;
   margin-bottom: 50px;
