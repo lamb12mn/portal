@@ -36,8 +36,8 @@
           <ul class="space-y-2">
             <li><router-link to="/" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.home') }}</router-link></li>
             <li><router-link to="/products" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.products') }}</router-link></li>
-            <li><router-link to="/honor" class="text-gray-400 hover:text-primary-500 transition-colors">荣誉资质</router-link></li>
-            <li><router-link to="/newsCenter" class="text-gray-400 hover:text-primary-500 transition-colors">新闻中心</router-link></li>
+            <li><router-link to="/honor" class="text-gray-400 hover:text-primary-500 transition-colors">{{t('nav.newsCenter')}}</router-link></li>
+            <li><router-link to="/newsCenter" class="text-gray-400 hover:text-primary-500 transition-colors">{{t('nav.newsCenter')}}</router-link></li>
             <li><router-link to="/about" class="text-gray-400 hover:text-primary-500 transition-colors">{{ t('nav.about') }}</router-link></li>
           </ul>
         </div>

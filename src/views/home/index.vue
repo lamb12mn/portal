@@ -68,7 +68,7 @@
                 />
               </svg>
             </router-link>
-            <router-link to="/honor" class="btn btn-outline">荣誉资质</router-link>
+            <router-link to="/honor" class="btn btn-outline">{{ t('nav.honor') }}</router-link>
           </div>
 
           <!-- 科技感特性指标 -->
@@ -77,19 +77,19 @@
               class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
             >
               <div class="text-2xl font-bold text-primary-600">20+</div>
-              <div class="text-sm text-gray-500">定制经验</div>
+              <div class="text-sm text-gray-500">{{ t('home.experience') }}</div>
             </div>
             <div
               class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
             >
-              <div class="text-2xl font-bold text-secondary-600">6000m²</div>
-              <div class="text-sm text-gray-500">生产基地</div>
+              <div class="text-2xl font-bold text-secondary-600">{{ t('home.6000m') }}</div>
+              <div class="text-sm text-gray-500">{{ t('home.shengChanJiDi') }}</div>
             </div>
             <div
               class="text-center bg-white/80 backdrop-blur-sm rounded-lg py-3 px-2 shadow-sm border border-gray-100"
             >
               <div class="text-2xl font-bold text-accent-600">80+</div>
-              <div class="text-sm text-gray-500">加工设备</div>
+              <div class="text-sm text-gray-500">{{t('home.index.6bpnq850b9s0')}}</div>
             </div>
           </div>
 
@@ -97,19 +97,19 @@
           <div class="mt-6 flex flex-wrap gap-2">
             <span
               class="text-xs py-1 px-3 bg-primary-100 text-primary-700 rounded-full"
-              >现代化</span
+              >{{t('home.index.6bpnq850bxs0')}}</span
             >
             <span
               class="text-xs py-1 px-3 bg-secondary-100 text-secondary-700 rounded-full"
-              >专业加工</span
+              >{{t('home.index.6bpnq850c0c0')}}</span
             >
             <span
               class="text-xs py-1 px-3 bg-accent-100 text-accent-700 rounded-full"
-              >技术成熟</span
+              >{{t('home.index.6bpnq850c2s0')}}</span
             >
             <span
               class="text-xs py-1 px-3 bg-gray-100 text-gray-700 rounded-full"
-              >新三板</span
+              >{{t('home.index.6bpnq850c4k0')}}</span
             >
           </div>
         </div>
@@ -213,7 +213,7 @@
                     class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"
                     style="filter: drop-shadow(0 0 2px rgba(0, 255, 0, 0.5))"
                   ></div>
-                  <div>运行中</div>
+                  <div>{{t('home.index.6bpnq850c6o0')}}</div>
                 </div>
 
                 <!-- 数字指标 -->
@@ -226,14 +226,14 @@
                 >
                   <div class="flex items-center space-x-3">
                     <div>
-                      <div class="text-xs text-white/70">现代化生产基地</div>
+                      <div class="text-xs text-white/70">{{t('home.index.6bpnq850c800')}}</div>
                       <div class="text-sm font-medium flex items-center">
                         <span>6000</span>
                         <span class="text-xs ml-1">m²</span>
                       </div>
                     </div>
                     <div>
-                      <div class="text-xs text-white/70">数控设备</div>
+                      <div class="text-xs text-white/70">{{t('home.index.6bpnq850c9g0')}}</div>
                       <div class="text-sm font-medium flex items-center">
                         <span>80</span>
                         <span class="text-xs ml-1">+</span>
@@ -298,7 +298,7 @@
                         class="text-white text-center text-xs font-semibold"
                         style="text-shadow: 0 0 4px rgba(255, 255, 255, 0.5)"
                       >
-                        新三板<br />上市公司
+                        {{t('home.index.6bpnq850c4k0')}}<br />上市公司
                       </div>
                     </div>
 
@@ -398,7 +398,7 @@
                 inset 0 0 0.5px rgba(255, 255, 255, 0.8);
             "
           >
-            <div class="text-xs text-gray-500 mb-1">现有产能</div>
+            <div class="text-xs text-gray-500 mb-1">{{t('home.index.6bpnq850cb40')}}</div>
             <div class="text-lg font-bold text-primary-600">98.7</div>
             <div
               class="w-12 h-1 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full mt-1"
@@ -424,15 +424,15 @@
             ></span>
             <span
               class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
-              >一目了然</span
+              >{{t('home.index.6bpnq850ccs0')}}</span
             >
             <span
               class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
             ></span>
           </div>
-          <h2 class="mb-4">工厂实拍</h2>
+          <h2 class="mb-4">{{t('home.index.6bpnq850ceo0')}}</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            石墨工厂实拍，实现真实场景一目了然。
+            {{t('home.index.6bpnq850cgg0')}}
           </p>
         </div>
       </div>
@@ -462,15 +462,15 @@
             ></span>
             <span
               class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
-              >聚焦核心</span
+              >{{t('home.index.6bpnq850ci00')}}</span
             >
             <span
               class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
             ></span>
           </div>
-          <h2 class="mb-4">产能布局</h2>
+          <h2 class="mb-4">{{t('home.index.6bpnq850cjc0')}}</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            我们实现了从材料研发、零部件加工到系统集成的全产业链覆盖
+            {{t('home.index.6bpnq850cl00')}}
           </p>
         </div>
 
@@ -540,7 +540,7 @@
               target="_blank"
               class="text-primary-500 font-medium hover:text-primary-600 transition-colors flex items-center group-hover:translate-x-1 transition-transform duration-300"
             >
-              查看
+              {{t('home.index.6bpnq850cmo0')}}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-4 w-4 ml-1"
@@ -597,15 +597,15 @@
             ></span>
             <span
               class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide"
-              >产品实力</span
+              >{{t('home.index.6bpnq850co80')}}</span
             >
             <span
               class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"
             ></span>
           </div>
-          <h2 class="mb-4">客户实例</h2>
+          <h2 class="mb-4">{{t('home.index.6bpnq850cpk0')}}</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            携手行业领军企业，通过定制化材料与集成解决方案，助力客户实现降本增效与技术突破，共筑极限制造新标杆。
+            {{t('home.index.6bpnq850cr40')}}
           </p>
         </div>
       </div>
@@ -991,7 +991,7 @@
               <div class="aspect-video bg-gray-100 overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1080"
-                  alt="抖音视频"
+                  :alt="t('home.index.6bpnq850csg0')"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
 
@@ -1173,7 +1173,7 @@
             class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
           >
             <div class="text-2xl font-bold text-white mb-1">50+</div>
-            <div class="text-white/80 text-sm">授权专利</div>
+            <div class="text-white/80 text-sm">{{t('home.index.6bpnq850cvc0')}}</div>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
@@ -1203,41 +1203,7 @@ import { useI18n } from "vue-i18n";
 import section1 from "./components/section1.vue";
 import section2 from "./components/section2.vue";
 import featuredProductsPage from "./components/featuredProducts.vue";
-// import product01 from "@/assets/images/home/product01.png";
-// import product02 from "@/assets/images/home/product02.png";
-// import product03 from "@/assets/images/home/product03.png";
 const { t, locale } = useI18n();
-
-// 将特色产品数据改为计算属性，以响应语言变化
-// const featuredProducts = computed(() => [
-//   {
-//     id: "watermark",
-//     title: "石墨制品",
-//     description:
-//       "石墨制品是以高纯石墨为原料，通过精密加工制成的耐高温、导电导热性能优异的关键零部件。广泛应用于光伏、半导体、真空热处理等领域的加热器、坩埚、电极及结构件，是高温工艺设备的核心组件。",
-//     image: product01,
-//     category: "ai-tools",
-//     tip: "核心组件",
-//   },
-//   {
-//     id: "legal-eye",
-//     title: "石墨材料",
-//     description:
-//       "石墨材料具有卓越的耐高温性、导电导热性能及化学稳定性，经高精度加工可制成加热器、坩埚、电极等核心部件，广泛应用于光伏、半导体、真空热处理等高端制造领域，是极端工况下的理想材料选择。",
-//     image: product02,
-//     category: "enterprise",
-//     tip: "不可或缺",
-//   },
-//   {
-//     id: "id-photo",
-//     title: "高温真空设备用石墨",
-//     image: product03,
-//     description:
-//       "专用于高温真空设备的石墨材料，具备高纯度、低放气、耐热冲击和良好机械强度，经精密加工后用作加热元件、支撑结构和坩埚，确保设备在极端环境下的稳定运行与工艺一致性。",
-//     category: "platform",
-//     tip: "高纯度",
-//   },
-// ]);
 
 // 监听语言变化，更新页面内容
 watch(locale, () => {
@@ -1247,28 +1213,28 @@ watch(locale, () => {
 const layoutList = computed(() => [
   {
     id: "litemes",
-    name: "主营业务",
+    name: t('home.index.6bpnq850cwo0'),
     description:
-      "聚焦泛半导体及高温热工全产业链关键环节的先进碳石墨/碳基复合材料制造及应用领域的方案解决商、集成服务商。",
-    tags: ["应用场景广泛", "技术引领", "国产替代标杆"],
+      t('home.index.6bpnq850cy80'),
+    tags: [t('home.index.6bpnq850czc0'), t('home.index.6bpnq850d0o0'), t('home.index.6bpnq850d200')],
     link: "https://github.com/freeleepm/LiteMES",
     icon: "icon2.png",
   },
   {
     id: "freesign",
-    name: "主营产品",
+    name: t('home.index.6bpnq850d3g0'),
     description:
-      "碳纤维保温材料、C/C复合材料，高温热场及其零件、PECVD用石墨舟及CFC板框、石墨制品等碳素材料。",
-    tags: ["多样化", "综合优势", "国产替代"],
+      t('home.index.6bpnq850d4g0'),
+    tags: [t('home.index.6bpnq850d5o0'), t('home.index.6bpnq850d6s0'), t('home.index.6bpnq850d7w0')],
     link: "https://github.com/freeleepm/freesign",
     icon: "icon1.png",
   },
   {
     id: "miniContract",
-    name: "市场应用",
+    name: t('home.index.6bpnq850d900'),
     description:
-      "光伏行业、半导体行业、真空热处理、烧结行业、汽车行业、LED行业、VC散热等。",
-    tags: ["光伏行业", "半导体行业", "高温热工领域"],
+      t('home.index.6bpnq850da40'),
+    tags: [t('home.index.6bpnq850dbg0'), t('home.index.6bpnq850dcg0'), t('home.index.6bpnq850ddk0')],
     link: "https://github.com/freeleepm/mini-contract",
     icon: "icon3.png",
   },
@@ -1276,16 +1242,16 @@ const layoutList = computed(() => [
 const openSourceProjects = computed(() => [
   {
     id: "litemes",
-    name: "主营业务",
+    name: t('home.index.6bpnq850cwo0'),
     description:
-      "聚焦泛半导体及高温热工全产业链关键环节的先进碳石墨/碳基复合材料制造及应用领域的方案解决商、集成服务商。",
+      t('home.index.6bpnq850cy80'),
     tags: ["JavaScript", "Vue"],
     link: "https://github.com/freeleepm/LiteMES",
     icon: "icon2.png",
   },
   {
     id: "freesign",
-    name: "主营产品",
+    name: t('home.index.6bpnq850d3g0'),
     description: t("home.openSourceProjects.freesign.description"),
     tags: ["Vue", "D3.js"],
     link: "https://github.com/freeleepm/freesign",
@@ -1293,15 +1259,13 @@ const openSourceProjects = computed(() => [
   },
   {
     id: "miniContract",
-    name: "市场应用",
+    name: t('home.index.6bpnq850d900'),
     description: t("home.openSourceProjects.miniContract.description"),
     tags: ["Vue"],
     link: "https://github.com/freeleepm/mini-contract",
     icon: "icon3.png",
   },
 ]);
-
-// 为首页添加结构化数据
 const updateStructuredData = () => {
   // 移除现有的结构化数据
   const existingScripts = document.querySelectorAll(
@@ -1352,7 +1316,6 @@ const updateStructuredData = () => {
   organizationScript.setAttribute("data-structured-data", "organization");
   document.head.appendChild(organizationScript);
 };
-
 onMounted(() => {
   updateStructuredData();
 });

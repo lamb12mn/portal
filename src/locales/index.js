@@ -3,9 +3,9 @@ import { createI18n } from 'vue-i18n'
 // 导入翻译文件
 // import enMessages from '../locales/en'
 // import zhCNMessages from '../locales/zh-CN'
-import zh from '../locales/zh-CN.json' // 中文语言包
-import en from '../locales/en.json' // 英文语言包
-import vi from '../locales/vi.json' // 越南语语言包
+import zh from '@/locales/zh-CN.json' // 中文语言包
+import en from '@/locales/en.json' // 英文语言包
+import vi from '@/locales/vi.json' // 越南语语言包
 // 获取用户偏好语言
 const getUserLanguage = () => {
   // 优先使用用户保存的语言偏好

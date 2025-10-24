@@ -26,7 +26,7 @@
                     <!-- 内环 -->
                     <div class="w-16 h-16 rounded-full border border-white/40 flex items-center justify-center" style="background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%); box-shadow: inset 0 0 6px rgba(59, 130, 246, 0.2);">
                       <div class="text-white text-center text-xs font-semibold" style="text-shadow: 0 0 4px rgba(255,255,255,0.5);">
-                        真空<br>包装
+                        {{t('components.section1.6bpofwmgo1s0')}}<br>包装
                       </div>
                     </div>
                     
@@ -45,7 +45,7 @@
                     <img src="@/assets/images/home/image01.png" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">{{t('components.section1.6bpofwmgos00')}}</h3>
                     <p class="text-gray-600 mb-4 flex-grow">格硕从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
                     </p>
                   </div> -->
@@ -71,7 +71,7 @@
                     <!-- 内环 -->
                     <div class="w-16 h-16 rounded-full border border-white/40 flex items-center justify-center" style="background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%); box-shadow: inset 0 0 6px rgba(59, 130, 246, 0.2);">
                       <div class="text-white text-center text-xs font-semibold" style="text-shadow: 0 0 4px rgba(255,255,255,0.5);">
-                        外<br>包装
+                        {{t('components.section1.6bpofwmgovk0')}}<br>包装
                       </div>
                     </div>
                     
@@ -84,7 +84,7 @@
                   </div>
                 </div>
                 <!-- <div>
-                    <h3 class="w-48 text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
+                    <h3 class="w-48 text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">{{t('components.section1.6bpofwmgos00')}}</h3>
                 </div> -->
                 <div class="flex-1 bg-gray-100 overflow-hidden relative">
                     <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -94,7 +94,7 @@
                     <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">实力雄厚</h3>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">{{t('components.section1.6bpofwmgos00')}}</h3>
                     <p class="text-gray-600 mb-4 flex-grow">格硕从事石墨制品定制20年，拥有丰富的行业经验，是国家高新技术企业;6000平米现代化生产基地，熟练工人120人，年产能超2亿；拥有进口加工中心、数控车床、锯床、雕铣机等石墨加工设备80余台，可实现大批量石墨制品生产加工。
 
 </p>
@@ -112,7 +112,7 @@
                     <!-- 内环 -->
                     <div class="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center" style="background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%); box-shadow: inset 0 0 6px rgba(59, 130, 246, 0.2);">
                       <div class="text-white text-center text-xs font-semibold" style="text-shadow: 0 0 4px rgba(255,255,255,0.5);">
-                        清洗<br>
+                        {{t('components.section1.6bpofwmgoy80')}}<br>
                       </div>
                     </div>
                     
@@ -146,7 +146,7 @@
                     <!-- 内环 -->
                     <div class="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center" style="background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%); box-shadow: inset 0 0 6px rgba(59, 130, 246, 0.2);">
                       <div class="text-white text-center text-xs font-semibold" style="text-shadow: 0 0 4px rgba(255,255,255,0.5);">
-                        制品<br>
+                        {{t('components.section1.6bpofwmgp000')}}<br>
                       </div>
                     </div>
                     
@@ -165,8 +165,8 @@
                     <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">标题</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">{{t('components.section1.6bpofwmgp1s0')}}</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">{{t('components.section1.6bpofwmgp300')}}</p>
               </div> -->
             </el-card>
             <!----->
@@ -188,8 +188,8 @@
                     <img src="@/assets/images/home/banner01.jpg" class="w-full h-full rounded-[0.5rem] object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">标题</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">{{t('components.section1.6bpofwmgp1s0')}}</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">{{t('components.section1.6bpofwmgp300')}}</p>
               </div>
             </el-card>
           </el-col>
@@ -198,6 +198,10 @@
     </el-col>
   </el-row>
 </template>
+<script setup>
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
+</script>
 <style lang="scss" scoped>
 .section1 {
 //   padding: 20px 0;

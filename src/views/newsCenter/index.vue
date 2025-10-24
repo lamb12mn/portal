@@ -48,14 +48,14 @@
             <span
               class="inline-block w-2 h-2 rounded-full bg-white mr-2 animate-pulse"
             ></span>
-            探索石墨产品应用
+            {{$t('newsCenter.index.6bppjrsvnak0')}}
           </span>
         </div>
 
         <!-- 优化标题效果，保持国际化支持 -->
         <div class="mb-6">
           <h1 class="text-white flex items-center flex-wrap">
-            <span class="title-first-part mr-3">我们的</span>
+            <span class="title-first-part mr-3">{{$t('newsCenter.index.6bppjrsvolk0')}}</span>
             <span class="relative inline-block title-highlight">
               <!-- 背景效果 -->
               <span
@@ -75,7 +75,7 @@
               <span
                 class="relative inline-block px-5 py-1.5 text-white font-bold"
               >
-                新闻中心
+                {{$t('newsCenter.index.6bppjrsvosw0')}}
               </span>
 
               <!-- 底部装饰线 -->
@@ -87,7 +87,7 @@
         </div>
 
         <p class="text-white text-opacity-90 text-xl max-w-2xl">
-          了解石墨制品行业的最新动态、技术发展和应用趋势
+          {{$t('newsCenter.index.6bppjrsvoww0')}}
         </p>
       </div>
     </section>
@@ -96,9 +96,9 @@
     <section class="py-16 md:py-24 bg-gray-50">
       <div class="container-custom">
         <div class="mb-12 text-center">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">最新资讯</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">{{$t('newsCenter.index.6bppjrsvp0k0')}}</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            获取关于石墨制品技术、市场和应用的最新资讯
+            {{$t('newsCenter.index.6bppjrsvp3o0')}}
           </p>
         </div>
 
@@ -127,7 +127,7 @@
                 :to="`/newsCenter/${news.id}`" 
                 class="text-blue-600 font-medium hover:text-secondary-700 flex items-center"
               >
-                阅读更多
+                {{$t('newsCenter.index.6bppjrsvp6w0')}}
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -224,7 +224,7 @@
             class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
           >
             <div class="text-2xl font-bold text-white mb-1">50+</div>
-            <div class="text-white/80 text-sm">授权专利</div>
+            <div class="text-white/80 text-sm">{{$t('newsCenter.index.6bppjrsvpac0')}}</div>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
@@ -249,11 +249,68 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { newsList } from '@/common/js/data.js'
 const { t, locale } = useI18n();
+const updateStructuredData = () => {
+  // 移除现有的结构化数据
+  const existingScripts = document.querySelectorAll(
+    "script[data-structured-data]"
+  );
+  existingScripts.forEach((script) => script.remove());
 
+  // 添加网站结构化数据
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://leepm.com/",
+    name: t("common.appName"),
+    description: t("home.hero.detailedDesc"),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://leepm.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // 添加组织结构化数据
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://leepm.com",
+    name: t("common.appName"),
+    logo: "https://leepm.com/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-XXX-XXXX-XXXX",
+      contactType: "customer service",
+      availableLanguage: ["Chinese", "English"],
+    },
+    sameAs: ["https://weibo.com/xiahuaai", "https://github.com/freeleepm"],
+  };
+
+  // 注入结构化数据
+  let websiteScript = document.createElement("script");
+  websiteScript.type = "application/ld+json";
+  websiteScript.textContent = JSON.stringify(websiteSchema);
+  websiteScript.setAttribute("data-structured-data", "website");
+  document.head.appendChild(websiteScript);
+
+  let organizationScript = document.createElement("script");
+  organizationScript.type = "application/ld+json";
+  organizationScript.textContent = JSON.stringify(organizationSchema);
+  organizationScript.setAttribute("data-structured-data", "organization");
+  document.head.appendChild(organizationScript);
+};
+onMounted(() => {
+  updateStructuredData();
+});
+// 监听语言变化，更新页面内容
+watch(locale, () => {
+  // 更新结构化数据
+  updateStructuredData();
+});
 
 const currentPage = ref(1)
 const itemsPerPage = 6

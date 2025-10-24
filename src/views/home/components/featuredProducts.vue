@@ -25,7 +25,7 @@
           </div>
           <h2 class="mb-4">{{ t("home.features.sectionTitle") }}</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            应用技术成熟 定制实力雄厚
+            {{t('components.featuredProducts.6bpnsynsmck0')}} {{t('components.featuredProducts.6bpnsynsnfs0')}}
           </p>
         </div>
 
@@ -117,10 +117,65 @@
     </section>
 </template>
 <script setup>
-import { computed } from "vue";
+import { computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 const { t, locale } = useI18n();
 import { productsList } from "../../../common/js/data.js"
 // 将特色产品数据改为计算属性，以响应语言变化
 const featuredProducts = computed(() => productsList);
+const updateStructuredData = () => {
+  // 移除现有的结构化数据
+  const existingScripts = document.querySelectorAll(
+    "script[data-structured-data]"
+  );
+  existingScripts.forEach((script) => script.remove());
+
+  // 添加网站结构化数据
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://leepm.com/",
+    name: t("common.appName"),
+    description: t("home.hero.detailedDesc"),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://leepm.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // 添加组织结构化数据
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://leepm.com",
+    name: t("common.appName"),
+    logo: "https://leepm.com/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-XXX-XXXX-XXXX",
+      contactType: "customer service",
+      availableLanguage: ["Chinese", "English"],
+    },
+    sameAs: ["https://weibo.com/xiahuaai", "https://github.com/freeleepm"],
+  };
+
+  // 注入结构化数据
+  let websiteScript = document.createElement("script");
+  websiteScript.type = "application/ld+json";
+  websiteScript.textContent = JSON.stringify(websiteSchema);
+  websiteScript.setAttribute("data-structured-data", "website");
+  document.head.appendChild(websiteScript);
+
+  let organizationScript = document.createElement("script");
+  organizationScript.type = "application/ld+json";
+  organizationScript.textContent = JSON.stringify(organizationSchema);
+  organizationScript.setAttribute("data-structured-data", "organization");
+  document.head.appendChild(organizationScript);
+};
+// 监听语言变化，更新页面内容
+watch(locale, () => {
+  // 更新结构化数据
+  updateStructuredData();
+});
 </script>

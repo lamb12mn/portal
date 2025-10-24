@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { fileURLToPath, URL } from 'node:url'
 const prefix = '/portal/'
-// https://vite.dev/config/
 export default defineConfig({
   base: prefix,
   plugins: [vue()],
@@ -12,6 +11,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@/assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@/common': fileURLToPath(new URL('./src/common', import.meta.url)),
+      '@/locales': fileURLToPath(new URL('./src/locales', import.meta.url)),
       // '@/assets': path.resolve(__dirname, './src/assets'),
       // '@/common': path.resolve(__dirname, './src/common'),
       // '@images': path.resolve(__dirname, './public/images'),

@@ -38,14 +38,14 @@
             <span
               class="inline-block w-2 h-2 rounded-full bg-white mr-2 animate-pulse"
             ></span>
-            石墨科技 · 品质见证
+            {{$t('honor.index.6bpp8yp2yzw0')}} · {{$t('honor.index.6bpp8yp2zt80')}}
           </span>
         </div>
 
         <!-- 优化标题效果，保持国际化支持 -->
         <div class="mb-6">
           <h1 class="text-white flex items-center flex-wrap">
-            <span class="title-first-part mr-3">我们的</span>
+            <span class="title-first-part mr-3">{{$t('honor.index.6bpp8yp30400')}}</span>
             <span class="relative inline-block title-highlight">
               <!-- 背景效果 -->
               <span
@@ -65,7 +65,7 @@
               <span
                 class="relative inline-block px-5 py-1.5 text-white font-bold"
               >
-                荣誉资质
+                {{$t('honor.index.6bpp8yp305s0')}}
               </span>
 
               <!-- 底部装饰线 -->
@@ -77,7 +77,7 @@
         </div>
 
         <p class="text-white text-opacity-90 text-xl max-w-2xl">
-          凭借卓越的技术实力和产品质量，我们获得了行业内外的广泛认可与赞誉
+          {{$t('honor.index.6bpp8yp307c0')}}
         </p>
       </div>
     </section>
@@ -89,11 +89,11 @@
       <div class="text-center mb-12">
           <div class="inline-flex items-center justify-center mb-3">
             <span class="h-px w-8 bg-gradient-to-r from-transparent to-primary-300"></span>
-            <span class="mx-3 text-sm font-semibold text-primary-600 uppercase tracking-wide">专业认证</span>
+            <span class="mx-3 text-sm font-semibold text-primary-600 uppercase tracking-wide">{{$t('honor.index.6bpp8yp30900')}}</span>
             <span class="h-px w-8 bg-gradient-to-l from-transparent to-primary-300"></span>
           </div>
-          <h2 class="mb-4">管理体系认证</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">体现了企业在质量管理、环境管理、职业健康安全管理等方面的合规性和规范性。</p>
+          <h2 class="mb-4">{{$t('honor.index.6bpp8yp30b80')}}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">{{$t('honor.index.6bpp8yp30cs0')}}</p>
         </div>
         <div class="certificates-grid">
           <div 
@@ -118,11 +118,11 @@
       <div class="text-center mb-12">
           <div class="inline-flex items-center justify-center mb-3">
             <span class="h-px w-8 bg-gradient-to-r from-transparent to-secondary-300"></span>
-            <span class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide">卓越，值得信赖</span>
+            <span class="mx-3 text-sm font-semibold text-secondary-600 uppercase tracking-wide">{{$t('honor.index.6bpp8yp30ek0')}}</span>
             <span class="h-px w-8 bg-gradient-to-l from-transparent to-secondary-300"></span>
           </div>
-          <h2 class="mb-4">荣誉证书</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">技术领先，创新卓越，荣获多项国家及行业权威认证。</p>
+          <h2 class="mb-4">{{$t('honor.index.6bpp8yp30g40')}}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">{{$t('honor.index.6bpp8yp30hg0')}}</p>
         </div>
         <div class="awards-list">
           <div 
@@ -150,11 +150,11 @@
       <div class="text-center mb-12">
           <div class="inline-flex items-center justify-center mb-3">
             <span class="h-px w-8 bg-gradient-to-r from-transparent to-accent-300"></span>
-            <span class="mx-3 text-sm font-semibold text-accent-600 uppercase tracking-wide">口碑相传</span>
+            <span class="mx-3 text-sm font-semibold text-accent-600 uppercase tracking-wide">{{$t('honor.index.6bpp8yp30j00')}}</span>
             <span class="h-px w-8 bg-gradient-to-l from-transparent to-accent-300"></span>
           </div>
-          <h2 class="mb-4">合作伙伴</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">行业跨度大，实现共赢</p>
+          <h2 class="mb-4">{{$t('honor.index.6bpp8yp30kg0')}}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">{{$t('honor.index.6bpp8yp30m40')}}</p>
         </div>
         <div class="partners-grid">
           <div 
@@ -176,10 +176,68 @@
 
 <script setup>
 import { certificates, awards, partners } from '@/common/js/data.js'
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n';
 
 const { t, locale } = useI18n();
+const updateStructuredData = () => {
+  // 移除现有的结构化数据
+  const existingScripts = document.querySelectorAll(
+    "script[data-structured-data]"
+  );
+  existingScripts.forEach((script) => script.remove());
+
+  // 添加网站结构化数据
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://leepm.com/",
+    name: t("common.appName"),
+    description: t("home.hero.detailedDesc"),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://leepm.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // 添加组织结构化数据
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://leepm.com",
+    name: t("common.appName"),
+    logo: "https://leepm.com/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-XXX-XXXX-XXXX",
+      contactType: "customer service",
+      availableLanguage: ["Chinese", "English"],
+    },
+    sameAs: ["https://weibo.com/xiahuaai", "https://github.com/freeleepm"],
+  };
+
+  // 注入结构化数据
+  let websiteScript = document.createElement("script");
+  websiteScript.type = "application/ld+json";
+  websiteScript.textContent = JSON.stringify(websiteSchema);
+  websiteScript.setAttribute("data-structured-data", "website");
+  document.head.appendChild(websiteScript);
+
+  let organizationScript = document.createElement("script");
+  organizationScript.type = "application/ld+json";
+  organizationScript.textContent = JSON.stringify(organizationSchema);
+  organizationScript.setAttribute("data-structured-data", "organization");
+  document.head.appendChild(organizationScript);
+};
+// 监听语言变化，更新页面内容
+watch(locale, () => {
+  // 更新结构化数据
+  updateStructuredData();
+});
+onMounted(() => {
+  updateStructuredData();
+});
 </script>
 
 <style scoped>

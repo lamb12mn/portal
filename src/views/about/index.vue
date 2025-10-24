@@ -66,7 +66,7 @@
               ></div>
               <img
                 src="@/assets/images/about/shawn-avatar.jpg"
-                alt="格硕科技"
+                :alt="$t('about.index.6bpprduwuyc0')"
                 class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
               />
             </div>
@@ -96,14 +96,14 @@
               <span
                 class="animate-pulse-slow inline-block w-2 h-2 rounded-full bg-green-400 mr-2"
               ></span>
-              格物致新，硕德精工，聚智共赢
+              {{$t('about.index.6bpprduwvgk0')}}
             </div>
             <h1
               class="text-5xl font-light tracking-wider mb-4 opacity-0 animate-fade-in-up"
             >
-              <span class="text-white">格硕科技</span>
+              <span class="text-white">{{$t('about.index.6bpprduwuyc0')}}</span>
               <span class="font-bold relative ml-2 text-primary-300 glow-text">
-                集成式创新<span
+                {{$t('about.index.6bpprduwvkc0')}}<span
                   class="absolute -bottom-1 left-0 w-full h-0.5 bg-primary-300"
                 ></span>
               </span>
@@ -111,12 +111,12 @@
             <p
               class="text-xl mb-6 text-white/90 font-light tracking-widest opacity-0 animate-fade-in-up animation-delay-200"
             >
-              材料专家、系统伙伴
+              {{$t('about.index.6bpprduww1c0')}}
             </p>
             <p
               class="text-lg mb-8 max-w-2xl backdrop-blur-sm bg-white/5 p-5 rounded-lg border border-white/10 leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 hover:bg-white/10 transition-colors duration-500"
             >
-              我们的初心已演进为：成为客户在极限制造领域最值得信赖的“系统伙伴”。我们不仅提供顶尖的核心材料，更提供从材料选型、结构设计到寿命管理的全方位支持。
+              {{$t('about.index.6bpprduww340')}}
             </p>
 
             <!-- 公司联系信息 -->
@@ -179,7 +179,7 @@
                     d="M719.4 499.1l-296.1-215A15.9 15.9 0 0 0 398 297a16.1 16.1 0 0 0-16.1 16.1v430A16.1 16.1 0 0 0 398 760a15.9 15.9 0 0 0 25.3-13.1l296.1-214.7c8.5-6.2 8.5-20.1 0-33.1z"
                   />
                 </svg>
-                <span>格硕科技有限公司</span>
+                <span>{{$t('about.index.6bpprduww500')}}</span>
               </a>
             </div>
           </div>
@@ -239,7 +239,7 @@
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">核心技术</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprduww6w0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -248,7 +248,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            我们在人工智能领域拥有多项核心技术，为客户提供全方位的AI解决方案
+            {{$t('about.index.6bpprduww8c0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -393,13 +393,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >从材料专家到系统伙伴的升华</span
+            >{{$t('about.index.6bpprduwwls0')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">企业初心</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprduwwns0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -408,7 +408,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            我们的初心已演进为：成为客户在极限制造领域最值得信赖的"系统伙伴"。我们不仅提供顶尖的核心材料，更提供从材料选型、结构设计到寿命管理的全方位支持。
+            {{$t('about.index.6bpprduwwpc0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -473,17 +473,17 @@
                       </span>
                     </div>
                     <h3 class="text-xl font-bold text-primary-600 mb-3">
-                      材料科学专注
+                      {{$t('about.index.6bpprduwwqw0')}}
                     </h3>
                     <p class="text-gray-600 mb-4 flex-grow">
-                      图中精密仪器前，研究人员全神贯注进行材料分析，体现了对材料科学的深入探索和不懈追求，彰显专业精神。
+                      {{$t('about.index.6bpprduwxe80')}}
                     </p>
                     <div
                       class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-72 overflow-hidden relative"
                     >
                       <img
                         src="@/assets/images/about/originalAspiration1.png"
-                        alt="材料科学专注"
+                        :alt="$t('about.index.6bpprduwwqw0')"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -531,17 +531,17 @@
                       </span>
                     </div>
                     <h3 class="text-xl font-bold text-primary-600 mb-3">
-                      系统伙伴协作
+                      {{$t('about.index.6bpprduwyl80')}}
                     </h3>
                     <p class="text-gray-600 mb-4 flex-grow">
-                      应用工程师与客户团队在产线旁深入交流，协同探讨技术方案，展现我们贴近现场、快速响应的全方位系统支持能力。
+                      {{$t('about.index.6bpprduwyrw0')}}
                     </p>
                    <div
                       class="bg-gray-200 border-2 border-dashed rounded-xl w-full flex items-center justify-center text-gray-400 h-72 overflow-hidden relative"
                     >
                       <img
                         src="@/assets/images/about/originalAspiration2.png"
-                        alt="材料科学专注"
+                        :alt="$t('about.index.6bpprduwwqw0')"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -601,13 +601,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >价值创造的三大维度</span
+            >{{$t('about.index.6bpprduwyw40')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">企业使命</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprduwz040')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -616,7 +616,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台
+            {{$t('about.index.6bpprduwz440')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -642,7 +642,7 @@
               <p
                 class="text-xl mb-12 italic text-center text-gray-700 border-l-4 border-primary-500 border-l-0 border-t-0 border-r-0 border-b py-4"
               >
-                以材料与技术的集成创新，为客户创造竞争优势，为行业构建共赢生态，为员工搭建成就舞台。
+                {{$t('about.index.6bpprduwz7o0')}}
               </p>
 
               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -759,13 +759,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >三位一体的未来蓝图</span
+            >{{$t('about.index.6bpprduwzek0')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">企业愿景</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprduwzjk0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -774,7 +774,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            成为全球领先的高端制造集成服务商，以材料为核心，以技术为延伸，构建一个高效、协同、可持续的工业新生态
+            {{$t('about.index.6bpprduwzmg0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -816,7 +816,7 @@
                         <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-violet-600 rounded-xl transform rotate-45 shadow-2xl flex items-center justify-center animate-pulse-slow">
                           <div class="w-16 h-16 bg-white/20 rounded transform -rotate-45"></div>
                         </div>
-                        <p class="text-white text-center mt-4 font-medium">核心材料</p>
+                        <p class="text-white text-center mt-4 font-medium">{{$t('about.index.6bpprduwzpo0')}}</p>
                       </div>
                       
                       <!-- 光路连接 -->
@@ -830,7 +830,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                               </svg>
                             </div>
-                            <p class="text-white text-sm mt-2 text-center">半导体芯片</p>
+                            <p class="text-white text-sm mt-2 text-center">{{$t('about.index.6bpprduwzso0')}}</p>
                           </div>
                         </div>
                         
@@ -843,7 +843,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                             </div>
-                            <p class="text-white text-sm mt-2 text-center">航空航天</p>
+                            <p class="text-white text-sm mt-2 text-center">{{$t('about.index.6bpprduwzvk0')}}</p>
                           </div>
                         </div>
                         
@@ -856,7 +856,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7" />
                               </svg>
                             </div>
-                            <p class="text-white text-sm mt-2 text-center">新能源汽车</p>
+                            <p class="text-white text-sm mt-2 text-center">{{$t('about.index.6bpprduwzyc0')}}</p>
                           </div>
                         </div>
                         
@@ -869,7 +869,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                             </div>
-                            <p class="text-white text-sm mt-2 text-center">工业生态</p>
+                            <p class="text-white text-sm mt-2 text-center">{{$t('about.index.6bpprdux00o0')}}</p>
                           </div>
                         </div>
                       </div>
@@ -880,7 +880,7 @@
                           <div class="w-40 h-40 rounded-full border-2 border-violet-400/50 flex items-center justify-center animate-ping-slow animation-delay-500">
                             <div class="w-32 h-32 rounded-full border-2 border-blue-400/70 flex items-center justify-center animate-ping-slow animation-delay-1000">
                               <div class="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center">
-                                <span class="text-white text-xs text-center font-medium">协作网络</span>
+                                <span class="text-white text-xs text-center font-medium">{{$t('about.index.6bpprdux03o0')}}</span>
                               </div>
                             </div>
                           </div>
@@ -897,10 +897,10 @@
                 <!-- 文案区域 -->
                 <div class="opacity-0 animate-fade-in-up animation-delay-300">
                   <h3 class="text-2xl font-bold text-primary-600 mb-6">
-                    构建高效、协同、可持续的工业新生态
+                    {{$t('about.index.6bpprdux06k0')}}
                   </h3>
                   <p class="text-gray-600 mb-6 leading-relaxed">
-                    我们的愿景是成为全球领先的高端制造集成服务商。以材料为核心，以技术为延伸，构建一个高效、协同、可持续的工业新生态。
+                    {{$t('about.index.6bpprdux08w0')}}
                   </p>
                   <div class="space-y-4">
                     <div class="flex items-start group">
@@ -912,8 +912,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">以材料为核心</h4>
-                        <p class="text-gray-600">依托核心材料技术，打造行业领先的材料解决方案，成为客户最信赖的材料专家。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux0bc0')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux0ds0')}}</p>
                       </div>
                     </div>
                     
@@ -926,8 +926,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">以技术为延伸</h4>
-                        <p class="text-gray-600">通过持续的技术创新和集成式研发，将核心材料技术延伸至更多应用领域。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux0gk0')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux0j40')}}</p>
                       </div>
                     </div>
                     
@@ -940,8 +940,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">构建工业新生态</h4>
-                        <p class="text-gray-600">打造高效、协同、可持续的工业生态系统，与合作伙伴共同成长，实现共赢。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux0lc0')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux0o00')}}</p>
                       </div>
                     </div>
                   </div>
@@ -997,13 +997,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >高标准</span
+            >{{$t('about.index.6bpprdux0q80')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">核心价值观</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprdux0sw0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -1012,7 +1012,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            格物致新，硕德精工，聚智共赢
+            {{$t('about.index.6bpprduwvgk0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -1062,7 +1062,7 @@
                   class="text-xl mb-8 italic border-l-4 border-primary-500 pl-6 py-2 bg-primary-50/30 rounded-r-lg relative overflow-hidden"
                 >
                   <span class="relative z-10">
-                    我们像追求产品"零缺陷"一样，追求员工能力的"持续精进"。我们拒绝办公室政治，鼓励坦诚反馈。我们鼓励"集成式创新"，打破领域壁垒。我们追求与客户、供应商的共赢，员工的幸福是实现这一切共赢的前提。
+                    {{$t('about.index.6bpprdux0v80')}}
                   </span>
                   <!-- 引用装饰线条 -->
                   <div class="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-300 to-transparent opacity-30"></div>
@@ -1108,7 +1108,7 @@
                             />
                           </svg>
                         </span>
-                        格物致新
+                        {{$t('about.index.6bpprdux0y00')}}
                       </h3>
                       <ul class="space-y-4">
                         <li class="flex items-start group/item">
@@ -1131,8 +1131,8 @@
                             </svg>
                           </span>
                           <span
-                            ><strong>匠心：</strong
-                            >精密检测仪屏幕上显示产品完美数据的特写，或一位老师傅正在用千分尺进行最后质检的专注神情。</span
+                            ><strong>{{$t('about.index.6bpprdux1080')}}</strong
+                            >{{$t('about.index.6bpprdux12o0')}}</span
                           >
                         </li>
                         <li class="flex items-start group/item">
@@ -1155,8 +1155,8 @@
                             </svg>
                           </span>
                           <span
-                            ><strong>品格：</strong
-                            >一张体现"透明"的照片，如一个干净的玻璃容器内装着我们的高纯材料，或在白板上进行开放式讨论的团队剪影。</span
+                            ><strong>{{$t('about.index.6bpprdux15c0')}}</strong
+                            >{{$t('about.index.6bpprdux17s0')}}</span
                           >
                         </li>
                       </ul>
@@ -1201,7 +1201,7 @@
                             />
                           </svg>
                         </span>
-                        硕德精工
+                        {{$t('about.index.6bpprdux1bc0')}}
                       </h3>
                       <ul class="space-y-4">
                         <li class="flex items-start group/item">
@@ -1224,8 +1224,8 @@
                             </svg>
                           </span>
                           <span
-                            ><strong>创新：</strong
-                            >"黑客松"创新大赛或技术研讨会的现场动态照片，捕捉团队成员在白板前激烈讨论、写满公式的瞬间。</span
+                            ><strong>{{$t('about.index.6bpprdux1e80')}}</strong
+                            >$t('about.index.6bpprdux1go0')创新大赛或技术研讨会的现场动态照片，捕捉团队成员在白板前激烈讨论、写满公式的瞬间。</span
                           >
                         </li>
                       </ul>
@@ -1251,7 +1251,7 @@
                             />
                           </svg>
                         </span>
-                        聚智共赢
+                        {{$t('about.index.6bpprdux1j80')}}
                       </h3>
                       <ul class="space-y-4">
                         <li class="flex items-start group/item">
@@ -1274,8 +1274,8 @@
                             </svg>
                           </span>
                           <span
-                            ><strong>共赢：</strong
-                            >一张"家庭日"的全家福，员工和家属们笑容灿烂，或一张与战略合作伙伴共同庆贺项目成功的合影。</span
+                            ><strong>{{$t('about.index.6bpprdux1lk0')}}</strong
+                            >{{$t('about.index.6bpprdux1ns0')}}</span
                           >
                         </li>
                       </ul>
@@ -1335,13 +1335,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >从核心材料到集成服务</span
+            >{{$t('about.index.6bpprdux1q80')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">产品与技术实力</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprdux1so0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -1350,7 +1350,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            我们提供覆盖全链条的产品矩阵，并通过五大核心技术平台，确保从材料到价值的完美转化
+            {{$t('about.index.6bpprdux1vg0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -1393,8 +1393,8 @@
                         <div class="w-20 h-20 mx-auto bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg shadow-2xl flex items-center justify-center mb-3 transform rotate-3">
                           <div class="w-14 h-14 bg-gradient-to-br from-gray-300 to-gray-500 rounded-sm"></div>
                         </div>
-                        <p class="text-white text-center text-sm font-medium">基石材料</p>
-                        <p class="text-gray-300 text-xs text-center mt-1">高纯石墨块材</p>
+                        <p class="text-white text-center text-sm font-medium">{{$t('about.index.6bpprdux1xw0')}}</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">{{$t('about.index.6bpprdux20o0')}}</p>
                       </div>
                       
                       <!-- 右上：核心制品 -->
@@ -1407,8 +1407,8 @@
                             <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full border-2 border-gray-900"></div>
                           </div>
                         </div>
-                        <p class="text-white text-center text-sm font-medium">核心制品</p>
-                        <p class="text-gray-300 text-xs text-center mt-1">精密石墨模具</p>
+                        <p class="text-white text-center text-sm font-medium">{{$t('about.index.6bpprdux23k0')}}</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">{{$t('about.index.6bpprdux2600')}}</p>
                       </div>
                       
                       <!-- 左下：先进复合材料 -->
@@ -1423,8 +1423,8 @@
                             </div>
                           </div>
                         </div>
-                        <p class="text-white text-center text-sm font-medium">先进复合材料</p>
-                        <p class="text-gray-300 text-xs text-center mt-1">碳碳复合材料</p>
+                        <p class="text-white text-center text-sm font-medium">{{$t('about.index.6bpprdux28k0')}}</p>
+                        <p class="text-gray-300 text-xs text-center mt-1">{{$t('about.index.6bpprdux2bc0')}}</p>
                       </div>
                       
                       <!-- 右下：表面增强服务 -->
@@ -1441,7 +1441,7 @@
                             </div>
                           </div>
                         </div>
-                        <p class="text-white text-center text-sm font-medium">表面增强服务</p>
+                        <p class="text-white text-center text-sm font-medium">{{$t('about.index.6bpprdux2dw0')}}</p>
                         <p class="text-gray-300 text-xs text-center mt-1">CVD涂层处理</p>
                       </div>
                       
@@ -1464,10 +1464,10 @@
                 <!-- 技术服务图 -->
                 <div class="opacity-0 animate-fade-in-up animation-delay-300">
                   <h3 class="text-2xl font-bold text-primary-600 mb-6">
-                    材料分析 - 设计 - 应用优化一体化服务
+                    {{$t('about.index.6bpprdux2g80')}} - {{$t('about.index.6bpprdux2io0')}} - {{$t('about.index.6bpprdux2l00')}}
                   </h3>
                   <p class="text-gray-600 mb-6 leading-relaxed">
-                    我们提供覆盖全链条的产品矩阵，并通过五大核心技术平台，确保从材料到价值的完美转化。
+                    {{$t('about.index.6bpprdux2n80')}}
                   </p>
                   <div class="space-y-6">
                     <div class="flex group">
@@ -1477,8 +1477,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">材料分析</h4>
-                        <p class="text-gray-600">通过先进的材料表征技术，深入分析材料的微观结构、成分分布和性能特征。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux2g80')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux2q40')}}</p>
                       </div>
                     </div>
                     
@@ -1489,8 +1489,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">精密设计</h4>
-                        <p class="text-gray-600">基于材料特性进行结构设计和工艺优化，确保产品满足客户的特定应用需求。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux2sg0')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux2us0')}}</p>
                       </div>
                     </div>
                     
@@ -1501,8 +1501,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4 class="font-bold text-gray-800 mb-1">应用优化</h4>
-                        <p class="text-gray-600">提供现场技术支持和应用指导，持续优化产品性能和使用寿命。</p>
+                        <h4 class="font-bold text-gray-800 mb-1">{{$t('about.index.6bpprdux2xk0')}}</h4>
+                        <p class="text-gray-600">{{$t('about.index.6bpprdux3000')}}</p>
                       </div>
                     </div>
                   </div>
@@ -1567,7 +1567,7 @@
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">发展历程</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprdux3g40')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -1576,7 +1576,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            格硕科技自成立以来，不断创新发展，为客户提供优质的人工智能解决方案
+            {{$t('about.index.6bpprdux3jg0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -1726,7 +1726,7 @@
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">联系我们</span>
+              <span class="text-primary-600 font-bold">{{$t('about.index.6bpprdux3ls0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -1735,7 +1735,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            如有合作意向或任何问题，请随时与我们联系
+            {{$t('about.index.6bpprdux3oc0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -1781,7 +1781,7 @@
               <h3
                 class="text-xl font-bold mb-3 transition-colors duration-300 group-hover:text-primary-600"
               >
-                电子邮箱
+                {{$t('about.index.6bpprdux3qs0')}}
               </h3>
               <p class="text-gray-600">project@goldstonelee.net</p>
             </div>
@@ -1824,7 +1824,7 @@
               <h3
                 class="text-xl font-bold mb-3 transition-colors duration-300 group-hover:text-primary-600"
               >
-                联系电话
+                {{$t('about.index.6bpprdux3tc0')}}
               </h3>
               <p class="text-gray-600">136-3169-2183</p>
             </div>
@@ -1873,9 +1873,9 @@
               <h3
                 class="text-xl font-bold mb-3 transition-colors duration-300 group-hover:text-primary-600"
               >
-                公司地址
+                {{$t('about.index.6bpprdux3vw0')}}
               </h3>
-              <p class="text-gray-600">深圳市宝安区西乡街道</p>
+              <p class="text-gray-600">{{$t('about.index.6bpprdux3y40')}}</p>
             </div>
           </a>
         </div>
@@ -1896,22 +1896,22 @@ const skills = [
     name: "about.skills.development",
     icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
     items: [
-      { name: "自然语言处理", level: 95 },
-      { name: "计算机视觉", level: 85 },
-      { name: "机器学习", level: 90 },
-      { name: "深度学习", level: 88 },
-      { name: "数据挖掘", level: 80 },
+      { name: t('about.index.6bpprdux40k0'), level: 95 },
+      { name: t('about.index.6bpprdux4340'), level: 85 },
+      { name: t('about.index.6bpprdux45k0'), level: 90 },
+      { name: t('about.index.6bpprdux48g0'), level: 88 },
+      { name: t('about.index.6bpprdux4ao0'), level: 80 },
     ],
   },
   {
     name: "about.skills.aiAndData",
     icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
     items: [
-      { name: "智能客服系统", level: 85 },
-      { name: "图像识别", level: 80 },
-      { name: "语音识别", level: 90 },
-      { name: "推荐系统", level: 78 },
-      { name: "数据分析", level: 88 },
+      { name: t('about.index.6bpprdux4d00'), level: 85 },
+      { name: t('about.index.6bpprdux4fg0'), level: 80 },
+      { name: t('about.index.6bpprdux4sw0'), level: 90 },
+      { name: t('about.index.6bpprdux4wg0'), level: 78 },
+      { name: t('about.index.6bpprdux51s0'), level: 88 },
     ],
   },
 ];
@@ -1919,26 +1919,26 @@ const skills = [
 // 企业使命数据
 const missions = [
   {
-    title: "客户维度",
+    title: t('about.index.6bpprdux54g0'),
     description:
-      "通过材料与技术的集成创新，为客户创造竞争优势，成为客户最值得信赖的系统伙伴。",
-    imageText: "客户签约握手或联合实验室揭牌照片",
+      t('about.index.6bpprdux56w0'),
+    imageText: t('about.index.6bpprdux5a80'),
     imageUrl: new URL("@/assets/images/about/corporate1.png", import.meta.url),
     icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
   },
   {
-    title: "行业维度",
+    title: t('about.index.6bpprdux5d40'),
     description:
-      "推动行业技术进步，构建共赢生态系统，引领材料科学与工程技术的发展方向。",
-    imageText: "国际行业展会/技术论坛现场图",
+      t('about.index.6bpprdux5fk0'),
+    imageText: t('about.index.6bpprdux5i40'),
     imageUrl: new URL("@/assets/images/about/corporate2.png", import.meta.url),
     icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
   },
   {
-    title: "员工维度",
+    title: t('about.index.6bpprdux5lg0'),
     description:
-      "为员工提供成长与发展的舞台，让每一位格硕人都能实现自我价值与职业理想。",
-    imageText: "员工培训或表彰瞬间照片",
+      t('about.index.6bpprdux5o80'),
+    imageText: t('about.index.6bpprdux5r00'),
     imageUrl: new URL("@/assets/images/about/corporate3.png", import.meta.url),
     icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
   },
@@ -1948,68 +1948,68 @@ const missions = [
 const experiences = [
   {
     period: "2005年",
-    title: "公司成立",
-    company: "格硕科技",
+    title: t('about.index.6bpprdux5tc0'),
+    company: t('about.index.6bpprduwuyc0'),
     description:
-      "2005年02月02日，深圳市格硕科技股份有限公司成立，现有注册资本4050万RMB",
+      t('about.index.6bpprdux6cw7'),
   },
   {
     period: "2009年",
-    title: "与比亚迪合作",
-    company: "格硕科技",
+    title: t('about.index.6bpprdux5vs0'),
+    company: t('about.index.6bpprduwuyc0'),
     description:
-      "2009年和深圳比亚迪共同开发汽车用石墨零件石墨转子、石墨叶片和石墨轴承的加工，产品质量稳定、交期及时，现已有10年的合作经验",
+      t('about.index.6bpprdux6cw8'),
   },
   {
     period: "2010年",
-    title: "高新技术企业",
-    company: "格硕科技",
-    description: "2010年获得国家高新技术企业认证",
+    title: t('about.index.6bpprdux5y80'),
+    company: t('about.index.6bpprduwuyc0'),
+    description: t('about.index.6bpprdux6cw9'),
   },
   {
     period: "2011年",
-    title: "成立子公司，探索碳碳材料应用",
-    company: "格硕科技",
+    title: t('about.index.6bpprdux60g0'),
+    company: t('about.index.6bpprduwuyc0'),
     description:
-      "2011年7月，与中南大学开展技术合作，全资成立东莞市凯鹏复合材料有限公司，将产业链延伸至石墨碳碳材料制造领域",
+      t('about.index.6bpprdux6cw6'),
   },
   {
     period: "2012年",
-    title: "通过ISO9001认证",
-    company: "格硕科技",
-    description: "2012年通过英国QAIC的ISO9001:2008认证",
+    title: t('about.index.6bpprdux6380'),
+    company: t('about.index.6bpprduwuyc0'),
+    description: t('about.index.6bpprdux6cw5'),
   },
   {
     period: "2013年",
-    title: "荣获专利奖，通过IATF16949认证",
-    company: "格硕科技",
+    title: t('about.index.6bpprdux65g0'),
+    company: t('about.index.6bpprduwuyc0'),
     description:
-      "2013年获得深圳市宝安区专利奖 （专利奖项有 一种真空石墨夹具、一种石墨叶片泵转子的加工方法及其专用夹具、石墨舟及其石墨舟片等 ），并通过IATF16949认证体系，是石墨加工行业较早通过汽车体系认证公司",
+      t('about.index.6bpprdux6cw4'),
   },
   {
     period: "2015年",
-    title: "公司挂牌上市",
-    company: "格硕科技",
+    title: t('about.index.6bpprdux6840'),
+    company: t('about.index.6bpprduwuyc0'),
     description:
-      "2015年公司在全国中小企业股份转让系统挂牌上市，证券代码833069，同年获得广东省科学技术一等奖",
+      t('about.index.6bpprdux6cw3'),
   },
   {
     period: "2016年",
-    title: "建立北京普扬科技",
-    company: "格硕科技",
-    description: "2016年和中科院合作建立北京普扬科技",
+    title: t('about.index.6bpprdux6ak0'),
+    company: t('about.index.6bpprduwuyc0'),
+    description: t('about.index.6bpprdux6cw2'),
   },
   {
     period: "2017年",
-    title: "深圳市自主创新百强企业",
-    company: "格硕科技",
-    description: "2017年获得第五届深圳市自主创新百强中小企业称号",
+    title: t('about.index.6bpprdux6cw0'),
+    company: t('about.index.6bpprduwuyc0'),
+    description: t('about.index.6bpprdux6cw1'),
   },
   {
-    period: "至今",
-    title: "如今",
-    company: "格硕科技",
-    description: "精彩仍将继续...",
+    period: t('about.index.6bpprdux6f80'),
+    title: t('about.index.6bpprdux6i80'),
+    company: t('about.index.6bpprduwuyc0'),
+    description: t('about.index.6bpprdux6ks0'),
   },
 ];
 
@@ -2019,12 +2019,12 @@ onMounted(() => {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "关于格硕科技",
+    name: t('about.index.6bpprdux6mk0'),
     description:
-      "了解格硕科技的故事、团队和技术理念，以及我们如何通过技术创新推动行业发展。",
+      t('about.index.6bpprdux6oo0'),
     publisher: {
       "@type": "Organization",
-      name: "格硕科技",
+      name: t('about.index.6bpprduwuyc0'),
       logo: {
         "@type": "ImageObject",
         url: "https://xiahua-ai.com/logo.png",
@@ -2040,13 +2040,13 @@ onMounted(() => {
       {
         "@type": "ListItem",
         position: 1,
-        name: "首页",
+        name: t('about.index.6bpprdux6qs0'),
         item: "https://xiahua-ai.com",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "关于我们",
+        name: t('about.index.6bpprdux6sw0'),
         item: "https://xiahua-ai.com/about",
       },
     ],
@@ -2056,9 +2056,9 @@ onMounted(() => {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "格硕科技",
+    name: t('about.index.6bpprduwuyc0'),
     description:
-      "致力于人工智能技术的研发与应用，为客户提供创新的AI解决方案，推动各行业智能化转型。",
+      t('about.index.6bpprdux6wc0'),
     url: "https://xiahua-ai.com",
     contactPoint: {
       "@type": "ContactPoint",
@@ -2068,9 +2068,9 @@ onMounted(() => {
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "西乡街道",
-      addressLocality: "深圳市",
-      addressRegion: "广东省",
+      streetAddress: t('about.index.6bpprdux6zc0'),
+      addressLocality: t('about.index.6bpprdux71g0'),
+      addressRegion: t('about.index.6bpprdux79g0'),
     },
   };
 

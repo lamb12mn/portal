@@ -71,7 +71,7 @@
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
               </svg>
-              返回新闻中心
+              {{t('newsCenter.detail.6bpphhkja280')}}
             </router-link>
             
             <div class="flex space-x-4">
@@ -86,7 +86,7 @@
                   to="/contact" 
                   class="flex items-center text-gray-600 hover:text-gray-900 font-medium"
                 >
-                联系我们
+                {{t('newsCenter.detail.6bpphhkjamk0')}}
               </router-link>
                 
               </button>
@@ -100,7 +100,7 @@
                   to="/about" 
                   class="flex items-center text-gray-600 hover:text-gray-900 font-medium"
                 >
-                了解我们
+                {{t('newsCenter.detail.6bpphhkjap00')}}
               </router-link>
               </button>
             </div>
@@ -112,7 +112,7 @@
     <!-- 相关推荐 -->
     <section class="py-16 bg-gray-50">
       <div class="container-custom">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">相关推荐</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">{{t('newsCenter.detail.6bpphhkjaqg0')}}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 
             v-for="(related, index) in relatedNews" 
@@ -138,7 +138,7 @@
                 :to="`/newsCenter/${related.id}`" 
                 class="text-blue-600 font-medium hover:text-blue-700 flex items-center"
               >
-                阅读更多
+                {{t('newsCenter.detail.6bpphhkjas40')}}
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -152,15 +152,72 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { newsList } from '@/common/js/data.js'
-const { t } = useI18n()
 const route = useRoute()
 const router = useRouter()
 const allNews = newsList
+const { t, locale } = useI18n();
+const updateStructuredData = () => {
+  // 移除现有的结构化数据
+  const existingScripts = document.querySelectorAll(
+    "script[data-structured-data]"
+  );
+  existingScripts.forEach((script) => script.remove());
 
+  // 添加网站结构化数据
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://leepm.com/",
+    name: t("common.appName"),
+    description: t("home.hero.detailedDesc"),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://leepm.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // 添加组织结构化数据
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://leepm.com",
+    name: t("common.appName"),
+    logo: "https://leepm.com/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-XXX-XXXX-XXXX",
+      contactType: "customer service",
+      availableLanguage: ["Chinese", "English"],
+    },
+    sameAs: ["https://weibo.com/xiahuaai", "https://github.com/freeleepm"],
+  };
+
+  // 注入结构化数据
+  let websiteScript = document.createElement("script");
+  websiteScript.type = "application/ld+json";
+  websiteScript.textContent = JSON.stringify(websiteSchema);
+  websiteScript.setAttribute("data-structured-data", "website");
+  document.head.appendChild(websiteScript);
+
+  let organizationScript = document.createElement("script");
+  organizationScript.type = "application/ld+json";
+  organizationScript.textContent = JSON.stringify(organizationSchema);
+  organizationScript.setAttribute("data-structured-data", "organization");
+  document.head.appendChild(organizationScript);
+};
+onMounted(() => {
+  updateStructuredData();
+});
+// 监听语言变化，更新页面内容
+watch(locale, () => {
+  // 更新结构化数据
+  updateStructuredData();
+});
 // 获取当前新闻
 const news = computed(() => {
   const id = parseInt(route.params.id)

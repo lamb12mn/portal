@@ -27,13 +27,13 @@
         <div class="inline-block px-4 py-1.5 mb-8 rounded-full bg-white/20 backdrop-blur-sm border border-white/20 text-white text-sm font-medium">
           <span class="flex items-center">
             <span class="inline-block w-2 h-2 rounded-full bg-white mr-2 animate-pulse"></span>
-            联系我们
+            {{t('contact.contactInfo.6bppuuoo0q80')}}
           </span>
         </div>
         
         <div class="mb-6">
           <h1 class="text-white flex items-center flex-wrap">
-            <span class="title-first-part mr-3">与我们</span>
+            <span class="title-first-part mr-3">{{t('contact.contactInfo.6bppuuoo15o0')}}</span>
             <span class="relative inline-block title-highlight">
               <!-- 背景效果 -->
               <span class="absolute inset-0 bg-white/15 backdrop-blur-sm rounded-lg transform rotate-0 border border-white/20 title-bg-animate"></span>
@@ -44,7 +44,7 @@
               
               <!-- 文字内容 -->
               <span class="relative inline-block px-5 py-1.5 text-white font-bold">
-                取得联系
+                {{t('contact.contactInfo.6bppuuoo17g0')}}
               </span>
               
               <!-- 底部装饰线 -->
@@ -53,7 +53,7 @@
           </h1>
         </div>
         
-        <p class="text-white text-opacity-90 text-xl max-w-2xl">如有任何问题或合作意向，请随时联系我们</p>
+        <p class="text-white text-opacity-90 text-xl max-w-2xl">{{t('contact.contactInfo.6bppuuoo1940')}}</p>
       </div>
     </section>
     <div class="container-custom py-16 md:py-24 relative z-10">
@@ -63,12 +63,12 @@
           <div class="section-header text-center mb-8">
             <div class="inline-flex items-center justify-center mb-3">
               <span class="h-px w-8 bg-gradient-to-r from-transparent to-primary-300"></span>
-              <span class="mx-3 text-sm font-semibold text-primary-600 uppercase tracking-wide">多种多样</span>
+              <span class="mx-3 text-sm font-semibold text-primary-600 uppercase tracking-wide">{{t('contact.contactInfo.6bppuuoo1a80')}}</span>
               <span class="h-px w-8 bg-gradient-to-l from-transparent to-primary-300"></span>
             </div>
-            <h2 class="mb-4">联系信息</h2>
+            <h2 class="mb-4">{{t('contact.contactInfo.6bppuuoo1bo0')}}</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                您可以通过以下方式与我们取得联系
+                {{t('contact.contactInfo.6bppuuoo1dc0')}}
               </p>
           </div>
           
@@ -82,8 +82,8 @@
                 </svg>
               </div>
               <div class="card-content">
-                <label>联系人：</label>
-                <span>罗小姐</span>
+                <label>{{t('contact.contactInfo.6bppuuoo1ek0')}}</label>
+                <span>{{t('contact.contactInfo.6bppuuoo1g00')}}</span>
               </div>
             </div>
             
@@ -94,7 +94,7 @@
                 </svg>
               </div>
               <div class="card-content">
-                <label>联系电话：</label>
+                <label>{{t('contact.contactInfo.6bppuuoo1hg0')}}</label>
                 <span>13631692183</span>
               </div>
             </div>
@@ -108,7 +108,7 @@
                 </svg>
               </div>
               <div class="card-content">
-                <label>传真号码：</label>
+                <label>{{t('contact.contactInfo.6bppuuoo1j40')}}</label>
                 <span>0755-81737007</span>
               </div>
             </div>
@@ -135,7 +135,7 @@
                 </svg>
               </div>
               <div class="card-content">
-                <label>邮箱：</label>
+                <label>{{t('contact.contactInfo.6bppuuoo1kg0')}}</label>
                 <span>project@goldstonelee.net</span>
               </div>
             </div>
@@ -148,8 +148,8 @@
                 </svg>
               </div>
               <div class="card-content">
-                <label>公司地址：</label>
-                <span>深圳市宝安区西乡街道龙腾社区汇智研发中心BC座C1801</span>
+                <label>{{t('contact.contactInfo.6bppuuoo1lo0')}}</label>
+                <span>{{t('contact.contactInfo.6bppuuoo1n00')}}</span>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@
         <div class="contact-content">
           <!-- 地图区域 -->
           <div class="map-container">
-            <h3 class="map-title">公司地址</h3>
+            <h3 class="map-title">{{t('contact.contactInfo.6bppuuoo1o00')}}</h3>
             <div class="map-wrapper">
               <!-- 集成高德地图API -->
               <div id="amap-container" class="map-placeholder"></div>
@@ -176,14 +176,14 @@
       <div class="contact-container">
         <div class="contact-form-section">
           <div class="form-header">
-            <h3 class="form-title">联系我们</h3>
-            <p class="form-description">如有任何问题，请填写以下表单，我们会尽快与您联系</p>
+            <h3 class="form-title">{{t('contact.contactInfo.6bppuuoo0q80')}}</h3>
+            <p class="form-description">{{t('contact.contactInfo.6bppuuoo1pg0')}}</p>
           </div>
           
           <form @submit.prevent="submitForm" class="contact-form">
             <div class="form-row">
               <div class="form-group">
-                <label for="name" class="form-label">姓名 <span class="required">*</span></label>
+                <label for="name" class="form-label">{{t('contact.contactInfo.6bppuuoo1qo0')}} <span class="required">*</span></label>
                 <div class="input-wrapper">
                   <input 
                     type="text" 
@@ -191,7 +191,7 @@
                     v-model="form.name" 
                     required 
                     class="form-input"
-                    placeholder="请输入您的姓名"
+                    :placeholder="t('contact.contactInfo.6bppuuoo1s80')"
                   />
                   <div class="input-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -203,7 +203,7 @@
               </div>
               
               <div class="form-group">
-                <label for="email" class="form-label">邮箱 <span class="required">*</span></label>
+                <label for="email" class="form-label">{{t('contact.contactInfo.6bppuuoo1tc0')}} <span class="required">*</span></label>
                 <div class="input-wrapper">
                   <input 
                     type="email" 
@@ -211,7 +211,7 @@
                     v-model="form.email" 
                     required 
                     class="form-input"
-                    placeholder="请输入您的邮箱地址"
+                    :placeholder="t('contact.contactInfo.6bppuuoo1v00')"
                   />
                   <div class="input-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -224,7 +224,7 @@
             </div>
             
             <div class="form-group">
-              <label for="message" class="form-label">留言 <span class="required">*</span></label>
+              <label for="message" class="form-label">{{t('contact.contactInfo.6bppuuoo1x00')}} <span class="required">*</span></label>
               <div class="textarea-wrapper">
                 <textarea 
                   id="message" 
@@ -232,7 +232,7 @@
                   required 
                   rows="5"
                   class="form-textarea"
-                  placeholder="请输入您的留言内容"
+                  :placeholder="t('contact.contactInfo.6bppuuoo1y80')"
                 ></textarea>
                 <div class="textarea-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -246,13 +246,13 @@
             <div class="form-actions">
               <button type="submit" class="submit-button" :disabled="isSubmitting">
                 <span v-if="!isSubmitting" class="button-content">
-                  <span>提交</span>
+                  <span>{{t('contact.contactInfo.6bppuuoo2040')}}</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </span>
                 <span v-else class="button-content">
-                  <span>提交中...</span>
+                  <span>{{t('contact.contactInfo.6bppuuoo21c0')}}</span>
                   <div class="loading-spinner"></div>
                 </span>
               </button>
@@ -266,7 +266,7 @@
                 </svg>
               </div>
               <div class="message-content">
-                感谢您的留言！我们会尽快与您联系。
+                {{t('contact.contactInfo.6bppuuoo22w0')}}
               </div>
             </div>
             
@@ -279,7 +279,7 @@
                 </svg>
               </div>
               <div class="message-content">
-                提交失败，请稍后再试。
+                {{t('contact.contactInfo.6bppuuoo2440')}}
               </div>
             </div>
           </form>
@@ -291,7 +291,8 @@
 
 <script setup>
 import { onMounted, ref, reactive } from 'vue'
-
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 // 表单数据
 const form = reactive({
   name: '',
@@ -351,13 +352,13 @@ const initMap = () => {
   // 添加标记点
   const marker = new AMap.Marker({
     position: [114.058224, 22.614097],
-    title: '格硕科技有限公司',
+    title: t('contact.contactInfo.6bppuuoo2500'),
     map: map
   })
 
   // 添加信息窗口
   const infoWindow = new AMap.InfoWindow({
-    content: '<div style="padding: 8px 12px;"><h4 style="margin: 0 0 5px 0; font-weight: bold;">格硕科技有限公司</h4><p style="margin: 0;">广东省深圳市龙岗区坂田街道办坂田社区</p><button id="nav-button" style="margin-top: 8px; padding: 4px 10px; background: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer;">导航到这里</button></div>',
+    content: `<div style="padding: 8px 12px;"><h4 style="margin: 0 0 5px 0; font-weight: bold;">${t('contact.contactInfo.6bppuuoo2500')}</h4><p style="margin: 0;">${t('contact.adress')}</p><button id="nav-button" style="margin-top: 8px; padding: 4px 10px; background: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer;">${t('contact.daoHangDaoZheLi')}</button></div>`,
     offset: new AMap.Pixel(0, -30)
   })
 

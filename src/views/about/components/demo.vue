@@ -44,13 +44,13 @@
           </div>
           <span
             class="inline-block text-primary-500 text-sm font-medium tracking-wider uppercase mb-3 opacity-0 animate-fade-in-up"
-            >从产品输出到能力输出</span
+            >{{t('components.demo.6bppogt8bow0')}}</span
           >
           <h2
             class="text-4xl font-light mb-6 opacity-0 animate-fade-in-up animation-delay-100"
           >
             <span class="relative inline-block mx-2">
-              <span class="text-primary-600 font-bold">我们的贡献</span>
+              <span class="text-primary-600 font-bold">{{t('components.demo.6bppogt8dac0')}}</span>
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-width-grow"
               ></span>
@@ -59,7 +59,7 @@
           <p
             class="max-w-2xl mx-auto text-gray-600 opacity-0 animate-fade-in-up animation-delay-200"
           >
-            格硕科技——您极限制造的系统伙伴
+            {{t('components.demo.6bppogt8dmg0')}}
           </p>
           <div
             class="absolute w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent top-[105%] left-0"
@@ -84,7 +84,7 @@
               <p
                 class="text-xl mb-12 italic text-center text-gray-700 border-l-4 border-primary-500 border-l-0 border-t-0 border-r-0 border-b py-4"
               >
-                我们通过“一站式”解决方案，帮助客户降本增效、规避风险。我们分享最佳实践，带动产业链共同进步，引领行业发展趋势。
+                {{t('components.demo.6bppogt8dq40')}}
               </p>
 
               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -155,52 +155,36 @@
           </div>
         </div>
         </div>
-     <!-- <div class="contribution-card ">
-       <div class="card-container">
-         <h2 class="card-title">我们的贡献</h2>
-         <p class="card-description">我们通过"一站式"解决方案，帮助客户降本增效、规避风险。我们分享最佳实践，带动产业链共同进步，引领行业发展趋势。</p>
-         
-         <div class="content-grid">
-           <div class="content-item" v-for="(item, index) in contentList" :key="index">
-             <div class="icon-animation">
-               <div class="animation-circle"></div>
-             </div>
-             <h3>{{ item.title }}</h3>
-             <p>{{ item.description }}</p>
-             <div class="image-placeholder">
-               <div class="image-content">{{ item.imageText }}</div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div> -->
  </section>
 </template>
 
 <script>
+import i18n from '@/locales';
+
 export default {
   name: 'ContributionCard',
   data() {
+  const t = i18n.global.t
     return {
       contentList: [
         {
-          title: '对客户的贡献',
-          description: '客户生产车间内，我司加热器与模具集成于自动化产线，设备稳定运行，环境整洁有序，高效协同作业，充分展现产品卓越的性能与可靠性。',
-          imageText: '客户生产车间图',
+          title: t('components.demo.6bppogt8dtg0'),
+          description: t('components.demo.6bppogt8dww0'),
+          imageText: t('components.demo.6bppogt8e000'),
           imageUrl: new URL("@/assets/images/about/contribution1.png", import.meta.url),
           icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
         },
         {
-          title: '对行业的贡献',
-          description: '荣誉墙集中陈列ISO认证、专利证书及客户授予的“优秀供应商”奖牌，彰显企业卓越品质、创新能力与行业高度认可。',
-          imageText: '荣誉墙照片',
+          title: t('components.demo.6bppogt8e300'),
+          description: t('components.demo.6bppogt8e6g0'),
+          imageText: t('components.demo.6bppogt8e9s0'),
           imageUrl: new URL("@/assets/images/about/contribution2.png", import.meta.url),
           icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
         },
         {
-          title: '团队与幸福',
-          description: '团队在徒步拓展中奋力前行，成员间相互鼓励，笑容洋溢，活力四射，展现了卓越的凝聚力与积极向上的精神风貌。',
-          imageText: '团队活动照片',
+          title: t('components.demo.6bppogt8ed40'),
+          description: t('components.demo.6bppogt8eg80'),
+          imageText: t('components.demo.6bppogt8ejo0'),
           imageUrl: new URL("@/assets/images/about/contribution3.png", import.meta.url),
           icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
         }

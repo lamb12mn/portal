@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { nextTick } from 'vue'
-import i18n from '../i18n'
+import i18n from '@/locales/index'
 
 const { t } = i18n.global
 
