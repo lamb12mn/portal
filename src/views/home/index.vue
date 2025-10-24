@@ -68,9 +68,7 @@
                 />
               </svg>
             </router-link>
-            <router-link to="/applicationField" class="btn btn-outline">{{
-              t("nav.applicationField")
-            }}</router-link>
+            <router-link to="/honor" class="btn btn-outline">荣誉资质</router-link>
           </div>
 
           <!-- 科技感特性指标 -->
